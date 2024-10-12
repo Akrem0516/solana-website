@@ -117,11 +117,11 @@ LanguageChanger(langbtn3, langbtn);
 const logos_image = document.getElementById("logos_image");
 function changelogo(x) {
     if (x.matches) { // If media query matches
-      logos_image.setAttribute('src','../PICs/SolanaLOGO.png');
+      logos_image.setAttribute('src','SolanaLOGO.png');
       header_contact.classList.add("hide");
       header_pics.classList.add("hide");
     } else {
-      logos_image.setAttribute('src','../PICs/solana_website_logo.png');
+      logos_image.setAttribute('src','solana_website_logo.png');
       header_contact.classList.remove("hide");
       header_pics.classList.remove("hide");
       body.style.backgroundColor = "";

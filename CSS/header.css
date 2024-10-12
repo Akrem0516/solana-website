@@ -13,7 +13,9 @@ header{
     cursor: pointer;
 }
 
-
+.airlines{
+    display: flex;
+}
 
 
 
@@ -33,7 +35,7 @@ header{
     header{
         background-image: linear-gradient(135deg, #FDFDFB 0%, #E1E1D1 100%);
         overflow: hidden;
-        gap: 30px;
+        gap: 15px;
     }
     .top{
         display: flex;
@@ -123,12 +125,12 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     .main_text{
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 10px;
         align-items: center;
     }
     .main_text div:first-child{
@@ -166,6 +168,7 @@ header{
         border-radius: 30px;
         box-shadow: 10px 10px 90px rgba(0, 0, 0, 0.2);
     }
+
     }
 
 
@@ -340,7 +343,7 @@ header{
 
 @media screen and (min-width : 801px) and (max-width : 1200px){
     header{
-        background-image: linear-gradient(135deg, #FDFDFB 10%, #E1E1D1 80%);
+        background-image: linear-gradient(135deg, #FDFDFB 10%, #F7F7EE 80%);
         overflow: hidden;
         gap: 90px;
     }
@@ -482,9 +485,10 @@ header{
 
 /* Media Query for large screens */
 
-@media screen and (min-width : 1201px ){*
+@media screen and (min-width : 1201px ){
+
     header{
-        background-image: linear-gradient(135deg, #FDFDFB 10%, #E1E1D1 80%);
+        background-image: linear-gradient(135deg, #FDFDFB 10%, #F7F7EE 80%);
         overflow: hidden;
         gap: 90px;
     }
@@ -570,7 +574,7 @@ header{
         color: #ca5100;
     }
     .main_text div:nth-child(2){
-        font-size: 39px;
+        font-size: 48px;
         font-family: 'Montserrat'; 
         color: #602600;
     }
@@ -594,11 +598,7 @@ header{
         gap: 5px;
         
     }
-    .header_pics img{
-        width: 190px;
-        border-radius: 60px;
-        box-shadow: 10px 10px 90px rgba(0, 0, 0, 0.2);
-    }
+ 
     }
 
 
