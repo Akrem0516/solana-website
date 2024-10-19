@@ -1,3 +1,682 @@
+.airlines{
+    display: flex;
+}
+.acceuil{
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Media Query for small screens */
+
+@media screen and (max-width : 320px ){
+    main{
+        display: flex;                      
+        justify-content: center;          
+    }
+    .container{
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 260px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .airlines{
+        gap: 25px;
+        overflow-x: hidden; 
+        white-space: nowrap;
+    }
+    .airlines img{
+        width: 35px;
+        display: inline-block;
+        object-fit: contain;
+        mix-blend-mode: color-burn;
+    }
+
+    
+
+
+    .presentation{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .presentation_title{
+        font-size: 11px;
+        font-family: 'Montserrat';
+        color: #602600;
+        text-align: center;
+    }
+    .presentation_main_points{
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+        text-align: center;
+        gap: 15px;
+    }
+    .main_point{
+        display: flex;               
+        flex-direction: column;
+        gap: 7px;
+    }
+    .main_point i{
+        font-size: 20px;
+        color: #F60;
+    }
+    .main_point_title{
+        font-size: 9px;
+        font-family: 'Montserrat';
+        color: #602600;
+    }
+    .main_point_text{
+        font-family: 'Source Sans pro', sans-serif;
+        font-size: 9px;
+    }
+
+
+
+
+
+    .nos_realisations{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+    .nos_realisations_title{
+        font-size: 11px;
+        font-family: 'Montserrat';
+        color: #602600;
+        text-align: center;
+    }
+    .destinations{
+        font-size: 7px;
+        font-family: 'Montserrat';
+        color: #F60;
+        text-align: center;
+    }
+    
+    .carousel_container {
+        display: flex;
+        gap: 9px;
+        align-items: center;
+        border-radius: 15px;
+    }
+    
+    .carousel_container i {
+        font-size: 19px;
+        color: #F60;
+        box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.4s;
+        border-radius: 30px;
+    }
+    
+    .carousel_container i:hover {
+        box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.2);
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    .destinations_carousel_container{
+        overflow: hidden;
+    }
+    .destinations_carousel {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        gap: 9px;
+        padding: 3px;
+    }
+    
+    .destinations_carousel_card {
+        flex-shrink: 0;
+        width: 94px; 
+        display: flex;
+        flex-direction: column;
+        background-color: #FDFDFB;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.4s;
+        border-radius: 7px; 
+    
+    }
+    
+    .destinations_carousel_card:hover {
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+    
+    .destinations_carousel img {
+        width: 100%; 
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .card_text {
+        padding: 7px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+    
+    .card_title {
+        font-size: 7px;
+        font-family: 'Montserrat';
+        color: #602600;
+    }
+    
+    .card_description {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 7px;
+    }
+
+
+
+    .reviews{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        border-radius: 15px;
+        background-color: #F7F7EE;
+        box-shadow: 3px 0px 7px #f0f0f0;
+        gap: 13px;
+    }
+    .reviews_title{
+        font-size: 12px;
+        font-family: 'Montserrat';
+        color: #602600;
+    }
+    .reviews_grids{
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        align-items: center;
+        justify-items: center;
+    }
+    .reviews_grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 10px;
+        background-color: white;
+        align-items: center;
+        text-align: center;
+    }
+    .reviews_grid img{
+        box-shadow: 5px 0px 9px #f0f0f0;
+        width: 160px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .reviews_grid a{
+        padding: 10px;
+        text-decoration: none;
+        color: #F60;
+        font-weight: 800;
+        font-size: 10px;
+    }
+    .grid_tagline{
+        grid-column: span 3; 
+        text-align: center; 
+        font-family: 'Montserrat', sans-serif; 
+        font-size: 11px; 
+        margin-top: 10px; 
+        color: #7a7a7a; 
+    }
+
+
+    
+
+}
+
+
+
+/* Media Query for medium-small screens */
+
+@media screen and (min-width : 321px) and (max-width : 800px){
+    main{
+        display: flex;                      
+        justify-content: center;          
+    }
+    .container{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .airlines{
+        gap: 30px;
+        overflow-x: hidden; 
+        white-space: nowrap;
+    }
+    .airlines img{
+        width: 40px;
+        display: inline-block;
+        object-fit: contain;
+        mix-blend-mode: color-burn;
+    }
+
+    
+
+
+    .presentation{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .presentation_title{
+        font-size: 12px;
+        font-family: 'Montserrat';
+        color: #602600;
+        text-align: center;
+    }
+    .presentation_main_points{
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+        text-align: center;
+        gap: 20px;
+    }
+    .main_point{
+        display: flex;               
+        flex-direction: column;
+        gap: 10px;
+    }
+    .main_point i{
+        font-size: 22px;
+        color: #F60;
+    }
+    .main_point_title{
+        font-size: 10px;
+        font-family: 'Montserrat';
+        color: #602600;
+    }
+    .main_point_text{
+        font-family: 'Source Sans pro', sans-serif;
+        font-size: 10px;
+    }
+
+
+
+
+
+    .nos_realisations{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .nos_realisations_title{
+        font-size: 12px;
+        font-family: 'Montserrat';
+        color: #602600;
+        text-align: center;
+    }
+    .destinations{
+        font-size: 8px;
+        font-family: 'Montserrat';
+        color: #F60;
+        text-align: center;
+    }
+    
+    .carousel_container {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    
+    .carousel_container i {
+        font-size: 20px;
+        color: #F60;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.4s;
+        border-radius: 30px;
+    }
+    
+    .carousel_container i:hover {
+        box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.2);
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    .destinations_carousel_container{
+        overflow: hidden;
+    }
+    .destinations_carousel {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        gap: 10px;
+        padding: 5px;
+    }
+    
+    .destinations_carousel_card {
+        flex-shrink: 0;
+        width: 100px; 
+        display: flex;
+        flex-direction: column;
+        background-color: #FDFDFB;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.4s;
+        border-radius: 7px; 
+    
+    }
+    
+    .destinations_carousel_card:hover {
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+    
+    .destinations_carousel img {
+        width: 100%; 
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .card_text {
+        padding: 7px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+    
+    .card_title {
+        font-size: 8px;
+        font-family: 'Montserrat';
+        color: #602600;
+    }
+    
+    .card_description {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 8px;
+    }
+
+
+
+
+    .reviews{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: #F7F7EE;
+        box-shadow: 3px 0px 7px #f0f0f0;
+        gap: 20px;
+    }
+    .reviews_title{
+        font-size: 16px;
+        font-family: 'Montserrat';
+        color: #602600;
+    }
+    .reviews_grids{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-items: center;
+    }
+    .reviews_grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 10px;
+        background-color: white;
+        align-items: center;
+        text-align: center;
+    }
+    .reviews_grid img{
+        box-shadow: 5px 0px 9px #f0f0f0;
+        width: 190px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .reviews_grid a{
+        padding: 12px;
+        text-decoration: none;
+        color: #F60;
+        font-weight: 800;
+        font-size: 11px;
+    }
+    .grid_tagline{
+        grid-column: span 3; 
+        text-align: center; 
+        font-family: 'Montserrat', sans-serif; 
+        font-size: 12px; 
+        margin-top: 10px; 
+        color: #7a7a7a; 
+    }
+
+
+    
+
+
+}
+
+
+
+/* Media Query for medium-large screens */
+
+@media screen and (min-width : 801px) and (max-width : 1200px){
+    main{
+        display: flex;                      
+        justify-content: center;          
+    }
+    .container{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        width: 760px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    
+    .airlines{
+        gap: 40px;
+        overflow-x: hidden; 
+        white-space: nowrap;
+    }
+    .airlines img{
+        width: 60px;
+    
+        display: inline-block;
+        object-fit: contain;
+        mix-blend-mode: color-burn;
+    }
+
+    .presentation{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .presentation_title{
+        font-size: 22px;
+        font-family: 'Montserrat';
+        color: #602600;
+    }
+    .presentation_main_points{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;   
+    }
+    .main_point{
+        display: flex;               
+        flex-direction: column;
+        gap: 15px;
+        width: 170px;
+    }
+    .main_point i{
+        font-size: 26px;
+        color: #F60;
+    }
+    .main_point_title{
+        font-size: 14px;
+        font-family: 'Montserrat';
+        color: #602600;
+    }
+    .main_point_text{
+        font-family: 'Source Sans pro', sans-serif;
+        font-size: 14px;
+    }
+
+
+
+
+    .nos_realisations{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nos_realisations_title{
+        font-size: 22px;
+        font-family: 'Montserrat';
+        color: #602600;
+    }
+    .destinations{
+        font-size: 14px;
+        font-family: 'Montserrat';
+        color: #F60;
+    }
+    
+    .carousel_container {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        border-radius: 20px;
+        padding: 20px 25px;
+    }
+    
+    .carousel_container i {
+        font-size: 35px;
+        color: #F60;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.4s;
+        border-radius: 50px;
+    }
+    
+    .carousel_container i:hover {
+        box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.2);
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    .destinations_carousel_container{
+        overflow: hidden;
+    }
+    .destinations_carousel {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .destinations_carousel_card {
+        flex-shrink: 0;
+        width: 170px; 
+        display: flex;
+        flex-direction: column;
+        background-color: #FDFDFB;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.4s;
+        border-radius: 10px; 
+    
+    }
+    
+    .destinations_carousel_card:hover {
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+    
+    .destinations_carousel img {
+        width: 100%; 
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .card_text {
+        padding: 7px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+    
+    .card_title {
+        font-size: 12px;
+        font-family: 'Montserrat';
+        color: #602600;
+    }
+    
+    .card_description {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 14px;
+    }
+
+
+
+
+
+    .reviews{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        border-radius: 40px;
+        background-color: #F7F7EE;
+        box-shadow: 5px 0px 9px #f0f0f0;
+        gap: 30px;
+    }
+    .reviews_title{
+        font-size: 24px;
+        font-family: 'Montserrat';
+        color: #602600;
+    }
+    .reviews_grids{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 25px;
+        align-items: center;
+        justify-items: center;
+    }
+    .reviews_grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 15px;
+        background-color: white;
+        align-items: center;
+        text-align: center;
+    }
+    .reviews_grid img{
+        box-shadow: 5px 0px 9px #f0f0f0;
+        width: 210px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .reviews_grid a{
+        padding: 15px;
+        text-decoration: none;
+        color: #F60;
+        font-weight: 800;
+        font-size: 12px;
+    }
+    .grid_tagline{
+        grid-column: span 3; 
+        text-align: center; 
+        font-family: 'Montserrat', sans-serif; 
+        font-size: 22px; 
+        margin-top: 20px; 
+        color: #7a7a7a; 
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
 
 /* Media Query for large screens */
 
@@ -7,16 +686,14 @@ main{
     justify-content: center;          
 }
 .container{
+    margin-top: 90px;
+    margin-bottom: 90px;
     width: 1100px;
     display: flex;
     flex-direction: column;
-    gap: 90px;
+    gap: 150px;
 }
-.header_pics img{
-    width: 190px;
-    border-radius: 60px;
-    box-shadow: 10px 10px 90px rgba(0, 0, 0, 0.2);
-}
+
 .airlines{
     gap: 50px;
     overflow-x: hidden; 
@@ -24,7 +701,7 @@ main{
 }
 .airlines img{
     width: 100px;
-    margin-top: 90px;
+
     display: inline-block;
     object-fit: contain;
     mix-blend-mode: color-burn;
@@ -83,6 +760,8 @@ main{
     display: flex;
     gap: 30px;
     align-items: center;
+    border-radius: 20px;
+    padding: 30px 20px;
 }
 
 .carousel_container i {
@@ -105,12 +784,12 @@ main{
     display: flex;
     transition: transform 0.5s ease-in-out;
     gap: 35px;
-    padding: 50px;
+    padding: 13px;
 }
 
 .destinations_carousel_card {
     flex-shrink: 0;
-    width: 270px; 
+    width: 197px; 
     display: flex;
     flex-direction: column;
     background-color: #FDFDFB;
@@ -121,7 +800,7 @@ main{
 }
 
 .destinations_carousel_card:hover {
-    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
 
@@ -148,6 +827,59 @@ main{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
 }
+.reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+    border-radius: 50px;
+    background-color: #F7F7EE;
+    box-shadow: 5px 0px 9px #f0f0f0;
+    gap: 40px;
+}
+.reviews_title{
+    font-size: 30px;
+    font-family: 'Montserrat';
+    color: #602600;
+}
+.reviews_grids{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 40px;
+    align-items: center;
+    justify-items: center;
+}
+.reviews_grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+}
+.reviews_grid img{
+    box-shadow: 5px 0px 9px #f0f0f0;
+    width: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.reviews_grid a{
+    padding: 20px;
+    text-decoration: none;
+    color: #F60;
+    font-weight: 800;
+}
+.grid_tagline{
+    grid-column: span 3; 
+    text-align: center; 
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 30px; 
+    margin-top: 40px; 
+    color: #7a7a7a; 
+}
+
 
 
 }
