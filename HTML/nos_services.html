@@ -1,278 +1,438 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <link rel="shortcut icon" type="image/x-icon" href="title_logo.ico" >
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Solana Travel</title>
 
-        <!--js files-->
-        <script src="header.js" defer></script>
-
-
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-        <!-- font-family -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"> <!-- Montserrat font -->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">  <!-- OpenSans font-->
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Source+Sans+Pro:wght@400&display=swap" rel="stylesheet"> <!-- poppins and source sans pro-->
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="title_logo.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solana Travel</title>
 
 
 
-        <!-- css files -->
-        <link rel="stylesheet" href="header.css">        <!-- header styling -->
-        <link rel="stylesheet" href="nos_services.css">          <!-- footer styling -->
-        <link rel="stylesheet" href="footer.css">          <!-- footer styling -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    </head>
-    <body>
-        <!-- header begins-->
-        <header>
-            <div class="top">
-                <div class="top_left">
-                    <img id="logos_image" onclick="location.href = 'acceuil'" class="logo" alt="" src="">
-                        <div class="menu">
-                            <div onclick="location.href = 'acceuil'" class="acceuil">Acceuil</div>
-                            <div onclick="location.href = 'nos_services'" class="nos_services">Nos Services</div>
-                            <div onclick="location.href = 'support_client'" class="support_client">Support Client</div>
-                            <div onclick="location.href = 'a_propos'" class="a_propos">À Propos</div>
-                        </div>
-                </div>
-                <div class="top_right">
-                    <div class="header_contact">
-                        <i class="fa-brands fa-instagram" onclick="window.open('https://www.instagram.com/solana_travel_dz/', '_blank');" ></i>
-                        <i class="fa-brands fa-facebook" onclick="window.open('https://www.facebook.com/solana.traavel', '_blank');"></i>
-                        <i class="fa-brands fa-tiktok" onclick="window.open('https://www.tiktok.com/@solana_travel2', '_blank');"></i>
-                        <i class="fa-brands fa-whatsapp" onclick="window.open('https://wa.me/+213556534705', '_blank');"></i>
+    <!-- font-family -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!-- Montserrat font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <!-- OpenSans font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Source+Sans+Pro:wght@400&display=swap"
+        rel="stylesheet"> <!-- poppins and source sans pro-->
+
+
+
+    <!-- css files -->
+    <link rel="stylesheet" href="header.css"> <!-- header styling -->
+    <link rel="stylesheet" href="nos_services.css"> <!-- footer styling -->
+    <link rel="stylesheet" href="footer.css"> <!-- footer styling -->
+
+</head>
+
+<body>
+    <!-- header begins-->
+    <header>
+        <div class="top">
+            <div class="top_left">
+                <img id="logos_image" onclick="location.href = 'acceuil'" class="logo" alt="" src="">
+                <div class="menu">
+                    <div onclick="location.href = 'acceuil'" class="acceuil" data-lang-fr="Acceuil"
+                        data-lang-ar="الصفحة الرئيسية" lang="fr">
+                        Acceuil
                     </div>
-                    
-                    <div class="language">
-                        <p class="languagebtn">AR</p>
-                    </div>
+                    <div onclick="location.href = 'nos_services'" class="nos_services" data-lang-fr="Nos Services"
+                        data-lang-ar="خدماتنا" lang="fr">Nos Services</div>
+                    <div onclick="location.href = 'support_client'" class="support_client" data-lang-fr="Support Client"
+                        data-lang-ar="دعم العملاء" lang="fr">Support Client</div>
+                    <div onclick="location.href = 'a_propos'" class="a_propos" data-lang-fr="À Propos"
+                        data-lang-ar="حولنا" lang="fr">À Propos</div>
                 </div>
             </div>
-            <div class="hero_section">
-                <div class="main_text">
-                    <div>Découvrez le monde, avec nos services de voyage.</div>
-                    <div>Bienvenue chez Solana,</br> un monde d'aventures !</div>
-                    <button>Decouvrir</button>
+            <div class="top_right">
+                <div class="header_contact">
+                    <i class="fa-brands fa-instagram"
+                        onclick="window.open('https://www.instagram.com/solana_travel_dz/', '_blank');"></i>
+                    <i class="fa-brands fa-facebook"
+                        onclick="window.open('https://www.facebook.com/solana.traavel', '_blank');"></i>
+                    <i class="fa-brands fa-tiktok"
+                        onclick="window.open('https://www.tiktok.com/@solana_travel2', '_blank');"></i>
+                    <i class="fa-brands fa-whatsapp"
+                        onclick="window.open('https://wa.me/+213556534705', '_blank');"></i>
                 </div>
-                <div class="header_pics">
-                    <img src="/Places/hotel_egypt.jpeg" alt="">
-                    <img src="/Places/china.jpeg" class="" alt="">
-                    <img src="/Places/champs-elysees.jpeg" class="" alt="">
-                    <img src="/Places/moscow.jpeg" class="" alt="">
-                    
+
+                <div class="language">
+                    <p class="languagebtn" data-lang-fr="FR" data-lang-ar="ع" lang="fr">ع</p>
                 </div>
             </div>
-        </header>
-        <!-- header ends-->
-
-
-
-
-        <!-- main begins -->
-        <main>
-            <div class="container">
-                <div class="nos_services_container">
-
-
-                    <!-- Ticketing -->
-                    <div class="service">
-                        <div class="service_header">
-                            <div class="service_title">Billetterie</div>
-                            <div class="service_subtitle">Réservation rapide et efficace de vos billets de transport</div>
-                        </div>
-                        <img src="Services/travel_concept_with_tickets.jpg" alt="">
-                        <div class="service_text">Chez Solana Travel, nous offrons un service complet de billetterie pour répondre à tous vos besoins de voyage. 
-                            Que vous souhaitiez réserver des billets d'avion, de train, de bus ou des croisières, notre équipe se charge de trouver les meilleures options disponibles, 
-                            adaptées à vos préférences et votre budget. 
-                            Nous collaborons avec des compagnies reconnues à travers le monde pour vous garantir des tarifs compétitifs et des horaires flexibles.
-                            <br><br>
-                            Notre expertise vous permet de bénéficier d'un large éventail de choix, allant des voyages économiques aux options premium. 
-                            Nous vous guidons à chaque étape du processus, depuis la recherche des meilleurs tarifs jusqu'à la finalisation de votre réservation. 
-                            De plus, nous vous tenons informé des promotions et des offres spéciales afin que vous puissiez profiter des meilleures opportunités pour vos déplacements.
-                            <br><br>
-                            Avec notre assistance personnalisée, voyagez sans stress, de la réservation jusqu'à l'embarquement. En cas de modification ou d'annulation, 
-                            notre équipe est là pour vous aider, en vous proposant des solutions adaptées à votre situation. Nous nous engageons à vous offrir un service rapide, 
-                            efficace et à l'écoute de vos besoins. Grâce à Solana Travel, partez en toute sérénité, 
-                            sachant que vos arrangements de voyage sont entre de bonnes mains.</div>
-                            <button>Contactez-nous</button>
-                    </div>
-
-
-                    <!-- Hotel reservations -->
-                    <div class="service">
-                        <div class="service_header">
-                            <div class="service_title">Réservation d'Hôtels</div>
-                            <div class="service_subtitle">Des séjours confortables aux meilleurs prix, partout dans le monde</div>
-                        </div>
-                        <img src="Services/female_receptionist_elegant_suit_work_hours.jpg" alt="">
-                        <div class="service_text">Notre agence vous offre un service complet de réservation d'hôtels pour répondre à tous vos besoins de séjour.
-                             Que ce soit pour un voyage d'affaires, des vacances en famille ou une escapade romantique, 
-                             nous vous aidons à trouver et réserver l'hébergement idéal, adapté à votre budget et à vos préférences. 
-                             Grâce à notre vaste réseau d'hôtels partenaires, vous pouvez choisir parmi une large gamme d'options, 
-                             allant des hôtels de luxe aux établissements économiques, en passant par des appartements et des villas.
-                            <br><br>
-                            Avec nos partenariats exclusifs, profitez de tarifs compétitifs et de disponibilités garanties dans des établissements de renom à travers le monde. 
-                            Notre équipe dévouée est à votre disposition pour s'assurer que votre séjour soit confortable et sans souci. 
-                            Nous vous offrons des conseils personnalisés sur les meilleures options d'hébergement et les commodités disponibles, 
-                            tout en garantissant un suivi attentif pour répondre à toutes vos demandes. Qu'il s'agisse de services supplémentaires comme le transfert aéroport, 
-                            le petit-déjeuner inclus ou des activités locales, nous nous engageons à rendre votre expérience inoubliable.</div>
-                            <button onclick="window.open('https://wa.me/+213556534705', '_blank');">Contactez-nous</button>
-                    </div>
-
-
-                    <!-- Travel Inssurance -->
-                    <div class="service">
-                        <div class="service_header">
-                            <div class="service_title">Assurance de Voyage</div>
-                            <div class="service_subtitle">Votre sécurité, notre priorité</div>
-                        </div>
-                        <img src="Services/travel_inssurance.jpg" alt="">
-                        <div class="service_text">Nous sommes fiers de vous offrir une assurance voyage complète en partenariat avec Macir Vie. 
-                            Cette assurance est conçue pour vous fournir une tranquillité d'esprit pendant vos déplacements. Elle couvre un large éventail de situations, 
-                            y compris les frais médicaux d'urgence, l'assistance en cas d'accident, et la protection de vos bagages contre les pertes ou les dommages.
-                            <br><br>
-                            En voyageant avec nous, vous bénéficiez d'un accès à une assistance 24/7, vous permettant de recevoir le soutien nécessaire où que vous soyez. 
-                            Que ce soit pour une escapade courte ou un voyage prolongé, notre équipe est là pour vous accompagner à chaque étape. 
-                            Profitez d'une couverture fiable et adaptée à vos besoins, afin que vous puissiez vous concentrer sur ce qui compte vraiment : 
-                            explorer de nouveaux horizons.
-                            <br><br>
-                            Voyagez sereinement avec Solana Travel et Macir Vie à vos côtés, et laissez-nous prendre soin de votre sécurité.</div>
-                            <button onclick="window.open('https://wa.me/+213556534705', '_blank');">Contactez-nous</button>
-                    </div>
-
-
-                    <!-- Hajj and Omra -->
-                    <div class="service">
-                        <div class="service_header">
-                            <div class="service_title">Hajj et Omra</div>
-                            <div class="service_subtitle">Un voyage spirituel inoubliable</div>
-                        </div>
-                        <img src="Services/holy_kaaba.jpg" alt="">
-                        <div class="service_text">Voyager pour le Hajj ou l’Omra est une expérience unique et profondément spirituelle. 
-                            Pour que vous puissiez vous concentrer pleinement sur votre foi, nous prenons en charge chaque détail de votre voyage sacré. 
-                            De la gestion des formalités administratives à la réservation de vols et d’hébergements à La Mecque et Médine, nous vous accompagnons à chaque étape.
-                            <br><br>
-                            Packages personnalisés et engagement constant
-                            <br><br>
-                            Nos offres sont conçues pour s'adapter à vos besoins et à votre budget, avec des packages personnalisés qui assurent votre confort et votre sérénité. 
-                            Profitez de conseils avisés et d’un soutien constant durant votre séjour, 
-                            pour vivre une expérience enrichissante, en toute confiance.</div>
-                            <button onclick="window.open('https://wa.me/+213556534705', '_blank');">Contactez-nous</button>
-                    </div>
-
-
-                    <!-- organized_trip -->
-                    <div class="service">
-                        <div class="service_header">
-                            <div class="service_title">Voyages Organisés</div>
-                            <div class="service_subtitle">Une expérience de découverte sans pareil</div>
-                        </div>
-                        <img src="Services/organized_trip.jpg" alt="">
-                        <div class="service_text">Explorez le monde sans stress grâce à nos voyages organisés. Nous vous proposons des circuits soigneusement planifiés 
-                            qui vous permettent de découvrir des destinations emblématiques tout en profitant de services de qualité. 
-                            Chaque itinéraire est conçu pour vous offrir un équilibre parfait entre découvertes culturelles, activités locales et moments de détente.
-                            <br><br>
-                            Que ce soit pour une escapade romantique, une aventure en famille ou un voyage en groupe, nous adaptons nos offres à vos attentes et vos envies. 
-                            Profitez d’un accompagnement personnalisé à chaque étape, 
-                            avec des guides expérimentés et une équipe dédiée pour assurer votre confort et votre satisfaction.</div>
-                            <button onclick="window.open('https://wa.me/+213556534705', '_blank');">Contactez-nous</button>
-                    </div>
-
-
-                    <!-- Visa -->
-                    <div class="service">
-                        <div class="service_header">
-                            <div class="service_title">Demandes de Visa</div>
-                            <div class="service_subtitle">Simplifiez vos démarches administratives pour voyager en toute sérénité</div>
-                        </div>
-                        <img src="Services/visa_demand.jpg" alt="">
-                        <div class="service_text">Notre service de demandes de visa simplifie le processus pour obtenir les autorisations nécessaires afin de voyager vers 
-                            votre destination préférée. Que ce soit pour un voyage touristique, d'affaires, ou familial, 
-                            nous vous assistons dans la préparation des documents requis et 
-                            veillons à ce que votre dossier soit complet et conforme aux exigences des ambassades.
-                            <br><br>
-                            Grâce à notre expertise et à nos partenariats avec divers consulats, nous vous aidons à maximiser vos chances d'obtenir un visa rapidement et sans tracas. 
-                            Profitez d'un accompagnement personnalisé pour une expérience sereine, depuis la soumission de votre demande jusqu'à la réception de votre visa.</div>
-                            <button onclick="window.open('https://wa.me/+213556534705', '_blank');">Contactez-nous</button>
-                    </div>
-
-
-                    <!-- personalized trip -->
-                    <div class="service">
-                        <div class="service_header">
-                            <div class="service_title">Voyages Personnalisés</div>
-                            <div class="service_subtitle">Des aventures sur mesure pour des souvenirs inoubliables</div>
-                        </div>
-                        <img src="Services/personalized_trip.jpg" alt="">
-                        <div class="service_text">Créez le voyage de vos rêves avec notre service de voyages personnalisés. 
-                            Nous vous offrons la possibilité de concevoir un itinéraire sur mesure, 
-                            adapté à vos préférences et à vos envies, que ce soit pour une escapade romantique, une aventure en famille, ou un voyage de découverte culturelle.
-                            <br><br>
-                            Notre équipe dédiée travaille en étroite collaboration avec vous pour sélectionner les meilleures destinations, hébergements, et activités, 
-                            afin de créer une expérience unique et mémorable. Laissez-nous nous occuper des détails, 
-                            et profitez pleinement de chaque moment de votre voyage personnalisé.</div>
-                            <button onclick="window.open('https://wa.me/+213556534705', '_blank');">Contactez-nous</button>
-                    </div>
+        </div>
+        <div class="hero_section">
+            <div class="main_text">
+                <div data-lang-fr="Découvrez le monde, avec nos services de voyage."
+                    data-lang-ar="اكتشف العالم مع خدمات السفر لدينا." lang="fr">
+                    Découvrez le monde, avec nos services de voyage.
                 </div>
-                
+                <div>
+                    <p data-lang-fr="Bienvenue chez Solana," data-lang-ar="مرحبًا بكم في سولانا" lang="fr"> Bienvenue
+                        chez Solana,</p>
+                    <p data-lang-fr="un monde d'aventures !" data-lang-ar="عالم من المغامرات" lang="fr"> un monde
+                        d'aventures !</p>
+                </div>
+                <button onclick="location.href='/support_client'" data-lang-fr="Découvrir" data-lang-ar="اكتشف"
+                    lang="fr">Découvrir</button>
             </div>
-        </main>
-        <!-- main ends -->
-
-
-
-
-
-        <!-- footer begins -->
-        <footer>
-            <div class="bottom">
-                <div class="top_bottom">
-                    <div class="experts_numbers">
-                        <div class="experts_numbers_text">parlez à notre experts à :</div>
-                        <div class="phone_numbers">
-                            <div>+213 556 53 47 05</div>
-                            <div>+213 777 79 21 57</div>
-                        </div>
-                    </div>
-                    <div class="follow_us">
-                        Suivez-nous
-                    </div>
-                </div>
-                <span></span>
-                <div class="bottom_bottom">
-                    <div class="contact">
-                        <div class="contact_text">Contact</div>
-                        <div class="contact_details">
-                            <div>Coop EL BADR Nº75 Bordj El Bahri, Alger, Algerie</div>
-                            <div>solanatraveldz@gmail.com</div>
-                        </div>
-                    </div>
-                    <div class="entreprise">
-                        <div class="entreprise_text">Entreprise</div>
-                        <div class="entreprise_details">
-                            <div>À Propos de nous</div>
-                            <div onclick="location.href='#reviews'">Avis sur SOLANA TRAVEL</div>
-                            <div>Localisation</div>
-                            <div>Contactez-nous</div>
-                        </div>
-                    </div>
-                    <div class="subscription-form">
-                        <h2>Abonnez-vous à notre newsletter</h2>
-                        <form id="subscribe-form" action="/subscribers" method="post">
-                            <input type="email" placeholder="Votre email" name="email" id="email" required>
-                            <button type="submit">S'abonner</button>
-                        </form>
-                        <p class="note">Restez à jour avec nos dernières offres et nouvelles !</p>
-                    </div>
-                </div>
-                <div class="copyrhight">Copyright © Mezouri 2024</div>
+            <div class="header_pics">
+                <img src="/Places/hotel_egypt.jpeg" alt="">
+                <img src="/Places/china.jpeg" class="" alt="">
+                <img src="/Places/champs-elysees.jpeg" class="" alt="">
+                <img src="/Places/moscow.jpeg" class="" alt="">
             </div>
-        </footer>
-        <!-- footer ends -->
+        </div>
+    </header>
+    <!-- header ends-->
 
-    </body>
+
+
+
+    <!-- main begins -->
+    <main>
+        <div class="container">
+            <div class="nos_services_container">
+
+
+                <!-- Ticketing -->
+                <div class="service">
+                    <div class="service_header">
+                        <div class="service_title" data-lang-fr="Billetterie" data-lang-ar="تذاكر">Billetterie</div>
+                        <div class="service_subtitle"
+                            data-lang-fr="Réservation rapide et efficace de vos billets de transport"
+                            data-lang-ar="حجز سريع وفعال لتذاكر النقل الخاصة بك">Réservation rapide et efficace de vos
+                            billets de transport</div>
+                    </div>
+                    <img src="Services/travel_concept_with_tickets.jpg" alt="">
+                    <div class="service_text">
+                        <p data-lang-fr="Chez Solana Travel, nous offrons un service complet de billetterie pour répondre à tous vos besoins de voyage. 
+        Que vous souhaitiez réserver des billets d'avion, de train, de bus ou des croisières, notre équipe se charge de trouver les meilleures options disponibles, 
+        adaptées à vos préférences et votre budget. Nous collaborons avec des compagnies reconnues à travers le monde pour vous garantir des tarifs compétitifs et des horaires flexibles."
+                            data-lang-ar="في سولانا ترافيل، نقدم خدمة شاملة لحجز التذاكر لتلبية جميع احتياجاتك في السفر
+        . سواء كنت ترغب في حجز تذاكر الطيران أو القطار أو الحافلة أو الرحلات البحرية، فإن فريقنا يتولى العثور على أفضل الخيارات المتاحة
+        ، المتناسبة مع تفضيلاتك وميزانيتك. نحن نتعاون مع شركات معروفة حول العالم لضمان أسعار تنافسية ومواعيد مرنة.">
+                            Chez Solana Travel, nous offrons un service complet de billetterie pour répondre à tous vos
+                            besoins de voyage. Que vous souhaitiez réserver des billets d'avion,
+                            de train, de bus ou des croisières, notre équipe se charge de trouver les meilleures options
+                            disponibles, adaptées à vos préférences et votre budget.
+                            Nous collaborons avec des compagnies reconnues à travers le monde pour vous garantir des
+                            tarifs compétitifs et des horaires flexibles.
+                        </p>
+                        <p data-lang-fr="Notre expertise vous permet de bénéficier d'un large éventail de choix, allant des voyages économiques aux options premium. 
+        Nous vous guidons à chaque étape du processus, depuis la recherche des meilleurs tarifs jusqu'à la finalisation de votre réservation. De plus, 
+        nous vous tenons informé des promotions et des offres spéciales afin que vous puissiez profiter des meilleures opportunités pour vos déplacements."
+                            data-lang-ar="تتيح لك خبرتنا الاستفادة من مجموعة واسعة من الخيارات
+        ، بدءًا من الرحلات الاقتصادية إلى الخيارات المتميزة. نحن نوجهك في كل خطوة من العملية، بدءًا من البحث عن أفضل الأسعار حتى الانتهاء من حجزك
+        . بالإضافة إلى ذلك، نبقيك على اطلاع بالعروض الترويجية والعروض الخاصة حتى تتمكن من الاستفادة من أفضل الفرص لرحلاتك.">
+                            Notre expertise vous permet de bénéficier d'un large éventail de choix, allant des voyages
+                            économiques aux options premium. Nous vous guidons à chaque étape du processus,
+                            depuis la recherche des meilleurs tarifs jusqu'à la finalisation de votre réservation.
+                            De plus, nous vous tenons informé des promotions et des offres spéciales afin que vous
+                            puissiez profiter des meilleures opportunités pour vos déplacements.
+                        </p>
+                        <p data-lang-fr="Avec notre assistance personnalisée, voyagez sans stress, de la réservation jusqu'à l'embarquement. 
+        En cas de modification ou d'annulation, notre équipe est là pour vous aider, en vous proposant des solutions adaptées à votre situation. 
+        Nous nous engageons à vous offrir un service rapide, efficace et à l'écoute de vos besoins. Grâce à Solana Travel, partez en toute sérénité, 
+        sachant que vos arrangements de voyage sont entre de bonnes mains." data-lang-ar="مع مساعدتنا الشخصية، سافر بدون إجهاد، من الحجز حتى الصعود. في حالة التعديل أو الإلغاء
+        ، فإن فريقنا هنا لمساعدتك، من خلال تقديم حلول مناسبة لوضعك. نحن ملتزمون بتقديم خدمة سريعة وفعالة تستمع إلى احتياجاتك.
+         مع سولانا ترافيل، انطلق بأمان، مع العلم أن ترتيبات سفرك في أيدٍ أمينة.">
+                            Avec notre assistance personnalisée, voyagez sans stress, de la réservation jusqu'à
+                            l'embarquement. En cas de modification ou d'annulation,
+                            notre équipe est là pour vous aider, en vous proposant des solutions adaptées à votre
+                            situation. Nous nous engageons à vous offrir un service rapide,
+                            efficace et à l'écoute de vos besoins. Grâce à Solana Travel, partez en toute sérénité,
+                            sachant que vos arrangements de voyage sont entre de bonnes mains.
+                        </p>
+                    </div>
+                    <button data-lang-fr="Contactez-nous" data-lang-ar="اتصل بنا">Contactez-nous</button>
+                </div>
+
+
+
+                <!-- Hotel reservations -->
+                <div class="service">
+                    <div class="service_header">
+                        <div class="service_title" data-lang-fr="Réservation d'Hôtels" data-lang-ar="حجز الفنادق">
+                            Réservation d'Hôtels</div>
+                        <div class="service_subtitle"
+                            data-lang-fr="Des séjours confortables aux meilleurs prix, partout dans le monde"
+                            data-lang-ar="إقامات مريحة بأفضل الأسعار في جميع أنحاء العالم">Des séjours confortables aux
+                            meilleurs prix, partout dans le monde</div>
+                    </div>
+                    <img src="Services/female_receptionist_elegant_suit_work_hours.jpg" alt="">
+                    <div class="service_text">
+                        <p data-lang-fr="Notre agence vous offre un service complet de réservation d'hôtels pour répondre à tous vos besoins de séjour. Que ce soit pour un voyage d'affaires, des vacances en famille ou une escapade romantique, nous vous aidons à trouver et réserver l'hébergement idéal, adapté à votre budget et à vos préférences. Grâce à notre vaste réseau d'hôtels partenaires, vous pouvez choisir parmi une large gamme d'options, allant des hôtels de luxe aux établissements économiques, en passant par des appartements et des villas."
+                            data-lang-ar="وكالتنا تقدم لك خدمة شاملة لحجز الفنادق لتلبية جميع احتياجات إقامتك. سواء كان ذلك لرحلة عمل، عطلة عائلية أو هروب رومانسي، نحن هنا لمساعدتك في العثور على والحجز للإقامة المثالية، المتوافقة مع ميزانيتك وتفضيلاتك. بفضل شبكتنا الواسعة من الفنادق الشريكة، يمكنك الاختيار من بين مجموعة واسعة من الخيارات، بدءًا من الفنادق الفاخرة إلى المؤسسات الاقتصادية، بالإضافة إلى الشقق والفيلات.">
+                            Notre agence vous offre un service complet de réservation d'hôtels pour répondre à tous vos
+                            besoins de séjour. Que ce soit pour un voyage d'affaires, des vacances en famille ou une
+                            escapade romantique, nous vous aidons à trouver et réserver l'hébergement idéal, adapté à
+                            votre budget et à vos préférences. Grâce à notre vaste réseau d'hôtels partenaires, vous
+                            pouvez choisir parmi une large gamme d'options, allant des hôtels de luxe aux établissements
+                            économiques, en passant par des appartements et des villas.
+                        </p>
+                        <p data-lang-fr="Avec nos partenariats exclusifs, profitez de tarifs compétitifs et de disponibilités garanties dans des établissements de renom à travers le monde. Notre équipe dévouée est à votre disposition pour s'assurer que votre séjour soit confortable et sans souci. Nous vous offrons des conseils personnalisés sur les meilleures options d'hébergement et les commodités disponibles, tout en garantissant un suivi attentif pour répondre à toutes vos demandes. Qu'il s'agisse de services supplémentaires comme le transfert aéroport, le petit-déjeuner inclus ou des activités locales, nous nous engageons à rendre votre expérience inoubliable."
+                            data-lang-ar="مع شراكاتنا الحصرية، استمتع بأسعار تنافسية وتوافر مضمون في المؤسسات المعروفة في جميع أنحاء العالم. فريقنا المDedicated موجود لتأكد من أن إقامتك مريحة وخالية من القلق. نحن نقدم لك نصائح شخصية حول أفضل خيارات الإقامة والمرافق المتاحة، مع ضمان متابعة دقيقة للرد على جميع طلباتك. سواء كانت خدمات إضافية مثل النقل من المطار، الإفطار المشمول أو الأنشطة المحلية، نلتزم بجعل تجربتك لا تُنسى.">
+                            Avec nos partenariats exclusifs, profitez de tarifs compétitifs et de disponibilités
+                            garanties dans des établissements de renom à travers le monde. Notre équipe dévouée est à
+                            votre disposition pour s'assurer que votre séjour soit confortable et sans souci. Nous vous
+                            offrons des conseils personnalisés sur les meilleures options d'hébergement et les
+                            commodités disponibles, tout en garantissant un suivi attentif pour répondre à toutes vos
+                            demandes. Qu'il s'agisse de services supplémentaires comme le transfert aéroport, le
+                            petit-déjeuner inclus ou des activités locales, nous nous engageons à rendre votre
+                            expérience inoubliable.
+                        </p>
+                    </div>
+                    <button onclick="window.open('https://wa.me/+213556534705', '_blank');"
+                        data-lang-fr="Contactez-nous" data-lang-ar="اتصل بنا">Contactez-nous</button>
+                </div>
+
+
+
+                <!-- Travel Insurance -->
+                <div class="service">
+                    <div class="service_header">
+                        <div class="service_title" data-lang-fr="Assurance de Voyage" data-lang-ar="تأمين السفر">
+                            Assurance de Voyage</div>
+                        <div class="service_subtitle" data-lang-fr="Votre sécurité, notre priorité"
+                            data-lang-ar="أمانك، أولويتنا">Votre sécurité, notre priorité</div>
+                    </div>
+                    <img src="Services/travel_inssurance.jpg" alt="">
+                    <div class="service_text">
+                        <p data-lang-fr="Nous sommes fiers de vous offrir une assurance voyage complète en partenariat avec Macir Vie. Cette assurance est conçue pour vous fournir une tranquillité d'esprit pendant vos déplacements. Elle couvre un large éventail de situations, y compris les frais médicaux d'urgence, l'assistance en cas d'accident, et la protection de vos bagages contre les pertes ou les dommages."
+                            data-lang-ar="نحن فخورون بتقديم تأمين سفر شامل بالشراكة مع Macir Vie. تم تصميم هذا التأمين لتوفير راحة البال أثناء رحلاتك. يغطي مجموعة واسعة من الحالات، بما في ذلك النفقات الطبية الطارئة، والمساعدة في حالة الحوادث، وحماية أمتعتك من الفقدان أو الأضرار.">
+                            Nous sommes fiers de vous offrir une assurance voyage complète en partenariat avec Macir
+                            Vie. Cette assurance est conçue pour vous fournir une tranquillité d'esprit pendant vos
+                            déplacements. Elle couvre un large éventail de situations, y compris les frais médicaux
+                            d'urgence, l'assistance en cas d'accident, et la protection de vos bagages contre les pertes
+                            ou les dommages.
+                        </p>
+                        <p data-lang-fr="En voyageant avec nous, vous bénéficiez d'un accès à une assistance 24/7, vous permettant de recevoir le soutien nécessaire où que vous soyez. Que ce soit pour une escapade courte ou un voyage prolongé, notre équipe est là pour vous accompagner à chaque étape. Profitez d'une couverture fiable et adaptée à vos besoins, afin que vous puissiez vous concentrer sur ce qui compte vraiment : explorer de nouveaux horizons."
+                            data-lang-ar="عند السفر معنا، تستفيد من الوصول إلى المساعدة على مدار الساعة طوال أيام الأسبوع، مما يتيح لك الحصول على الدعم اللازم أينما كنت. سواء كانت رحلة قصيرة أو طويلة، فإن فريقنا هنا لمساعدتك في كل خطوة. استمتع بتغطية موثوقة ومناسبة لاحتياجاتك، حتى تتمكن من التركيز على ما هو مهم حقًا: استكشاف آفاق جديدة.">
+                            En voyageant avec nous, vous bénéficiez d'un accès à une assistance 24/7, vous permettant de
+                            recevoir le soutien nécessaire où que vous soyez. Que ce soit pour une escapade courte ou un
+                            voyage prolongé, notre équipe est là pour vous accompagner à chaque étape. Profitez d'une
+                            couverture fiable et adaptée à vos besoins, afin que vous puissiez vous concentrer sur ce
+                            qui compte vraiment : explorer de nouveaux horizons.
+                        </p>
+                        <p data-lang-fr="Voyagez sereinement avec Solana Travel et Macir Vie à vos côtés, et laissez-nous prendre soin de votre sécurité."
+                            data-lang-ar="سافر بسلام مع Solana Travel و Macir Vie إلى جانبك، ودعنا نعتني بأمانك.">
+                            Voyagez sereinement avec Solana Travel et Macir Vie à vos côtés, et laissez-nous prendre
+                            soin de votre sécurité.
+                        </p>
+                    </div>
+                    <button onclick="window.open('https://wa.me/+213556534705', '_blank');"
+                        data-lang-fr="Contactez-nous" data-lang-ar="اتصل بنا">Contactez-nous</button>
+                </div>
+
+
+
+                <!-- Hajj and Omra -->
+                <div class="service">
+                    <div class="service_header">
+                        <div class="service_title" data-lang-fr="Hajj et Omra" data-lang-ar="الحج والعمرة">Hajj et Omra
+                        </div>
+                        <div class="service_subtitle" data-lang-fr="Un voyage spirituel inoubliable"
+                            data-lang-ar="رحلة روحية لا تنسى">Un voyage spirituel inoubliable</div>
+                    </div>
+                    <img src="Services/holy_kaaba.jpg" alt="">
+                    <div class="service_text">
+                        <p data-lang-fr="Voyager pour le Hajj ou l’Omra est une expérience unique et profondément spirituelle. Pour que vous puissiez vous concentrer pleinement sur votre foi, nous prenons en charge chaque détail de votre voyage sacré. De la gestion des formalités administratives à la réservation de vols et d’hébergements à La Mecque et Médine, nous vous accompagnons à chaque étape."
+                            data-lang-ar="السفر لأداء الحج أو العمرة هو تجربة فريدة وعميقة الروح. لكي تتمكن من التركيز تمامًا على إيمانك، نتولى كل تفاصيل رحلتك المقدسة. من إدارة الإجراءات الإدارية إلى حجز الرحلات الجوية والإقامة في مكة والمدينة، نرافقك في كل خطوة.">
+                            Voyager pour le Hajj ou l’Omra est une expérience unique et profondément spirituelle. Pour
+                            que vous puissiez vous concentrer pleinement sur votre foi, nous prenons en charge chaque
+                            détail de votre voyage sacré. De la gestion des formalités administratives à la réservation
+                            de vols et d’hébergements à La Mecque et Médine, nous vous accompagnons à chaque étape.
+                        </p>
+                        <p data-lang-fr="Packages personnalisés et engagement constant"
+                            data-lang-ar="باقات مخصصة والتزام دائم">Packages personnalisés et engagement constant</p>
+                        <p data-lang-fr="Nos offres sont conçues pour s'adapter à vos besoins et à votre budget, avec des packages personnalisés qui assurent votre confort et votre sérénité. Profitez de conseils avisés et d’un soutien constant durant votre séjour, pour vivre une expérience enrichissante, en toute confiance."
+                            data-lang-ar="تُصمم عروضنا لتناسب احتياجاتك وميزانيتك، مع باقات مخصصة تضمن راحتك وسلامتك. استمتع بنصائح قيمة ودعم مستمر خلال إقامتك، لتعيش تجربة غنية بكل ثقة.">
+                            Nos offres sont conçues pour s'adapter à vos besoins et à votre budget, avec des packages
+                            personnalisés qui assurent votre confort et votre sérénité. Profitez de conseils avisés et
+                            d’un soutien constant durant votre séjour, pour vivre une expérience enrichissante, en toute
+                            confiance.
+                        </p>
+                    </div>
+                    <button onclick="window.open('https://wa.me/+213556534705', '_blank');"
+                        data-lang-fr="Contactez-nous" data-lang-ar="اتصل بنا">Contactez-nous</button>
+                </div>
+
+
+
+                <!-- organized_trip -->
+                <div class="service">
+                    <div class="service_header">
+                        <div class="service_title" data-lang-fr="Voyages Organisés" data-lang-ar="الرحلات المنظمة">
+                            Voyages Organisés</div>
+                        <div class="service_subtitle" data-lang-fr="Une expérience de découverte sans pareil"
+                            data-lang-ar="تجربة اكتشاف لا تضاهى">Une expérience de découverte sans pareil</div>
+                    </div>
+                    <img src="Services/organized_trip.jpg" alt="">
+                    <div class="service_text">
+                        <p data-lang-fr="Explorez le monde sans stress grâce à nos voyages organisés. Nous vous proposons des circuits soigneusement planifiés qui vous permettent de découvrir des destinations emblématiques tout en profitant de services de qualité. Chaque itinéraire est conçu pour vous offrir un équilibre parfait entre découvertes culturelles, activités locales et moments de détente."
+                            data-lang-ar="استكشف العالم دون قلق بفضل رحلاتنا المنظمة. نقدم لك جولات مخططة بعناية تتيح لك اكتشاف وجهات شهيرة مع الاستمتاع بخدمات عالية الجودة. تم تصميم كل مسار لتقديم توازن مثالي بين الاكتشافات الثقافية، والأنشطة المحلية، ولحظات الاسترخاء.">
+                            Explorez le monde sans stress grâce à nos voyages organisés. Nous vous proposons des
+                            circuits soigneusement planifiés qui vous permettent de découvrir des destinations
+                            emblématiques tout en profitant de services de qualité. Chaque itinéraire est conçu pour
+                            vous offrir un équilibre parfait entre découvertes culturelles, activités locales et moments
+                            de détente.
+                        </p>
+                        <p data-lang-fr="Que ce soit pour une escapade romantique, une aventure en famille ou un voyage en groupe, nous adaptons nos offres à vos attentes et vos envies. Profitez d’un accompagnement personnalisé à chaque étape, avec des guides expérimentés et une équipe dédiée pour assurer votre confort et votre satisfaction."
+                            data-lang-ar="سواء كانت لعطلة رومانسية، مغامرة عائلية، أو رحلة جماعية، نحن نكيف عروضنا لتناسب توقعاتك ورغباتك. استمتع بدعم شخصي في كل مرحلة، مع مرشدين ذوي خبرة وفريق مكرس لضمان راحتك ورضاك.">
+                            Que ce soit pour une escapade romantique, une aventure en famille ou un voyage en groupe,
+                            nous adaptons nos offres à vos attentes et vos envies. Profitez d’un accompagnement
+                            personnalisé à chaque étape, avec des guides expérimentés et une équipe dédiée pour assurer
+                            votre confort et votre satisfaction.
+                        </p>
+                    </div>
+                    <button onclick="window.open('https://wa.me/+213556534705', '_blank');"
+                        data-lang-fr="Contactez-nous" data-lang-ar="اتصل بنا">Contactez-nous</button>
+                </div>
+
+
+
+                <!-- Visa -->
+                <div class="service">
+                    <div class="service_header">
+                        <div class="service_title" data-lang-fr="Demandes de Visa" data-lang-ar="طلبات التأشيرة">
+                            Demandes de Visa</div>
+                        <div class="service_subtitle"
+                            data-lang-fr="Simplifiez vos démarches administratives pour voyager en toute sérénité"
+                            data-lang-ar="بسط إجراءاتك الإدارية للسفر بكل هدوء">Simplifiez vos démarches administratives
+                            pour voyager en toute sérénité</div>
+                    </div>
+                    <img src="Services/visa_demand.jpg" alt="">
+                    <div class="service_text">
+                        <p data-lang-fr="Notre service de demandes de visa simplifie le processus pour obtenir les autorisations nécessaires afin de voyager vers votre destination préférée. Que ce soit pour un voyage touristique, d'affaires, ou familial, nous vous assistons dans la préparation des documents requis et veillons à ce que votre dossier soit complet et conforme aux exigences des ambassades."
+                            data-lang-ar="خدمتنا لطلبات التأشيرة تبسط العملية للحصول على التصاريح اللازمة للسفر إلى وجهتك المفضلة. سواء كان ذلك لرحلة سياحية، عمل، أو عائلية، نساعدك في إعداد الوثائق المطلوبة ونتأكد من أن ملفك مكتمل ومتوافق مع متطلبات السفارات.">
+                            Notre service de demandes de visa simplifie le processus pour obtenir les autorisations
+                            nécessaires afin de voyager vers votre destination préférée. Que ce soit pour un voyage
+                            touristique, d'affaires, ou familial, nous vous assistons dans la préparation des documents
+                            requis et veillons à ce que votre dossier soit complet et conforme aux exigences des
+                            ambassades.
+                        </p>
+                        <p data-lang-fr="Grâce à notre expertise et à nos partenariats avec divers consulats, nous vous aidons à maximiser vos chances d'obtenir un visa rapidement et sans tracas. Profitez d'un accompagnement personnalisé pour une expérience sereine, depuis la soumission de votre demande jusqu'à la réception de votre visa."
+                            data-lang-ar="بفضل خبرتنا وشراكاتنا مع مختلف القنصليات، نساعدك على زيادة فرصك في الحصول على تأشيرة بسرعة ودون عناء. استمتع بدعم شخصي لتجربة هادئة، من تقديم طلبك حتى استلام تأشيرتك.">
+                            Grâce à notre expertise et à nos partenariats avec divers consulats, nous vous aidons à
+                            maximiser vos chances d'obtenir un visa rapidement et sans tracas. Profitez d'un
+                            accompagnement personnalisé pour une expérience sereine, depuis la soumission de votre
+                            demande jusqu'à la réception de votre visa.
+                        </p>
+                    </div>
+                    <button onclick="window.open('https://wa.me/+213556534705', '_blank');"
+                        data-lang-fr="Contactez-nous" data-lang-ar="اتصل بنا">Contactez-nous</button>
+                </div>
+
+
+
+                <!-- personalized trip -->
+                <div class="service">
+                    <div class="service_header">
+                        <div class="service_title" data-lang-fr="Voyages Personnalisés" data-lang-ar="رحلات مخصصة">
+                            Voyages Personnalisés</div>
+                        <div class="service_subtitle"
+                            data-lang-fr="Des aventures sur mesure pour des souvenirs inoubliables"
+                            data-lang-ar="مغامرات مصممة حسب الطلب لذكريات لا تُنسى">Des aventures sur mesure pour des
+                            souvenirs inoubliables</div>
+                    </div>
+                    <img src="Services/personalized_trip.jpg" alt="">
+                    <div class="service_text">
+                        <p data-lang-fr="Créez le voyage de vos rêves avec notre service de voyages personnalisés. Nous vous offrons la possibilité de concevoir un itinéraire sur mesure, adapté à vos préférences et à vos envies, que ce soit pour une escapade romantique, une aventure en famille, ou un voyage de découverte culturelle."
+                            data-lang-ar="أنشئ رحلة أحلامك مع خدمتنا للرحلات المخصصة. نقدم لك إمكانية تصميم مسار مخصص يتناسب مع تفضيلاتك ورغباتك، سواء كانت لرحلة رومانسية، مغامرة عائلية، أو رحلة اكتشاف ثقافية.">
+                            Créez le voyage de vos rêves avec notre service de voyages personnalisés. Nous vous offrons
+                            la possibilité de concevoir un itinéraire sur mesure, adapté à vos préférences et à vos
+                            envies, que ce soit pour une escapade romantique, une aventure en famille, ou un voyage de
+                            découverte culturelle.
+                        </p>
+                        <p data-lang-fr="Notre équipe dédiée travaille en étroite collaboration avec vous pour sélectionner les meilleures destinations, hébergements, et activités, afin de créer une expérience unique et mémorable. Laissez-nous nous occuper des détails, et profitez pleinement de chaque moment de votre voyage personnalisé."
+                            data-lang-ar="يعمل فريقنا المخصص عن كثب معك لاختيار أفضل الوجهات، أماكن الإقامة، والأنشطة، لإنشاء تجربة فريدة لا تُنسى. دعنا نتولى التفاصيل، واستمتع بكل لحظة من رحلتك المخصصة.">
+                            Notre équipe dédiée travaille en étroite collaboration avec vous pour sélectionner les
+                            meilleures destinations, hébergements, et activités, afin de créer une expérience unique et
+                            mémorable. Laissez-nous nous occuper des détails, et profitez pleinement de chaque moment de
+                            votre voyage personnalisé.
+                        </p>
+                    </div>
+                    <button onclick="window.open('https://wa.me/+213556534705', '_blank');"
+                        data-lang-fr="Contactez-nous" data-lang-ar="اتصل بنا">Contactez-nous</button>
+                </div>
+
+
+            </div>
+    </main>
+    <!-- main ends -->
+
+
+
+
+
+    <!-- footer begins -->
+    <footer>
+        <div class="bottom">
+            <div class="top_bottom">
+                <div class="experts_numbers">
+                    <div class="experts_numbers_text" data-lang-fr="Parlez à nos experts à :"
+                        data-lang-ar="تحدث إلى خبرائنا في :">parlez à notre experts à :</div>
+                    <div class="phone_numbers">
+                        <div data-lang-fr="+213 556 53 47 05" data-lang-ar="+213 556 53 47 05">+213 556 53 47 05</div>
+                        <div data-lang-fr="+213 777 79 21 57" data-lang-ar="+213 777 79 21 57">+213 777 79 21 57</div>
+                    </div>
+                </div>
+                <div class="follow_us" onclick="window.open('https://bit.ly/m/solana_travel', '_blank');"
+                    data-lang-fr="Suivez-nous" data-lang-ar="تابعنا">
+                    Suivez-nous
+                </div>
+            </div>
+            <span></span>
+            <div class="bottom_bottom">
+                <div class="contact">
+                    <div class="contact_text" data-lang-fr="Contact" data-lang-ar="اتصل">Contact</div>
+                    <div class="contact_details">
+                        <div data-lang-fr="Coop EL BADR Nº75 Bordj El Bahri, Alger, Algérie"
+                            data-lang-ar=" برج البحري الجزائر">Coop EL BADR Nº75 Bordj El Bahri, Alger, Algerie</div>
+                        <div data-lang-fr="solanatraveldz@gmail.com" data-lang-ar="solanatraveldz@gmail.com">
+                            solanatraveldz@gmail.com</div>
+                    </div>
+                </div>
+                <div class="entreprise">
+                    <div class="entreprise_text" data-lang-fr="Entreprise" data-lang-ar="شركة">Entreprise</div>
+                    <div class="entreprise_details">
+                        <div onclick="location.href='/a_propos'" data-lang-fr="À Propos de nous"
+                            data-lang-ar="معلومات عنا">À Propos de nous</div>
+                        <div onclick="location.href='/acceuil/#reviews'" data-lang-fr="Avis sur SOLANA TRAVEL"
+                            data-lang-ar="آراء حول سولانا ترافل">Avis sur SOLANA TRAVEL</div>
+                        <div onclick="location.href='/support_client/#map'" data-lang-fr="Localisation"
+                            data-lang-ar="الموقع">Localisation</div>
+                        <div onclick="window.open('https://wa.me/+213556534705', '_blank');"
+                            data-lang-fr="Contactez-nous" data-lang-ar="اتصل بنا">Contactez-nous</div>
+                    </div>
+                </div>
+                <div class="subscription-form">
+                    <h2 data-lang-fr="Abonnez-vous à notre newsletter" data-lang-ar="اشترك في نشرتنا الإخبارية">
+                        Abonnez-vous à notre newsletter</h2>
+                    <form id="subscribe-form" action="/subscribers" method="post">
+                        <input type="email" placeholder="Votre email" name="email" id="email" required>
+                        <button type="submit" data-lang-fr="S'abonner" data-lang-ar="اشترك">S'abonner</button>
+                    </form>
+                    <p class="note" data-lang-fr="Restez à jour avec nos dernières offres et nouvelles !"
+                        data-lang-ar="ابق على اطلاع بأحدث العروض والأخبار لدينا">Restez à jour avec nos dernières offres
+                        et nouvelles !</p>
+                </div>
+            </div>
+            <div class="copyrhight" data-lang-fr="Copyright © Mezouri 2024"
+                data-lang-ar="حقوق الطبع والنشر © مزوري 2024">Copyright © Mezouri 2024</div>
+        </div>
+    </footer>
+    <!-- footer ends -->
+
+
+</body>
+<!--js files-->
+<script src="header.js" defer></script>
+<script src="change_language.js"></script>
+
 </html>

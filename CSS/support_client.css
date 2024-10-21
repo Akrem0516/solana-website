@@ -24,7 +24,7 @@ main{
         width: 260px;
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: 40px;
     }
     .contact_us{
         display: flex;
@@ -43,11 +43,11 @@ main{
     }
     .contact_us_subtitle{
         font-family: 'Source Sans pro', sans-serif;
-        font-size: 8px;
+        font-size: 10px;
         color: #7a7a7a;
     }
     .contact_us_text{
-        font-size: 7px;
+        font-size: 10px;
         font-family: 'Source Sans pro', sans-serif;
         color: #602600;
     }
@@ -106,7 +106,7 @@ main{
         gap: 3px;
     }
     .form_item label{
-        font-size: 6px;
+        font-size: 8px;
         font-family: 'Montserrat';
         color: #602600;
     }
@@ -168,7 +168,7 @@ main{
     .send_email_tagline{
         text-align: center;
         font-family: 'Montserrat', sans-serif;
-        font-size: 6px;
+        font-size: 8px;
         color: #7a7a7a;
     }
     

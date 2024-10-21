@@ -20,7 +20,7 @@
         width: 260px;
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: 40px;
     }
     .airlines{
         gap: 25px;
@@ -71,7 +71,7 @@
     }
     .main_point_text{
         font-family: 'Source Sans pro', sans-serif;
-        font-size: 9px;
+        font-size: 10px;
     }
 
 
@@ -157,7 +157,7 @@
     }
     
     .card_title {
-        font-size: 7px;
+        font-size: 8px;
         font-family: 'Montserrat';
         color: #602600;
     }

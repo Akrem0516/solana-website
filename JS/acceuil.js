@@ -44,7 +44,6 @@ function for_large(){
     
     // Calculate the maximum scroll width
     const maxScroll = (cardWidth + gap ) * ( numberOfCards - "4" ) ;
-    console.log(maxScroll)
     
     nextBtn.addEventListener('click', () => {
         if (scrollAmount < maxScroll) {
