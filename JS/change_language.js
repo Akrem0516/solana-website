@@ -1,10 +1,18 @@
 
     const languageButton = document.querySelector('.languagebtn');
     const elementsToTranslate = document.querySelectorAll('[data-lang-fr], [data-lang-ar]');
+    const bodyelement = document.querySelector("body");
 
     let currentLang = 'fr'; // Default language
+    bodyelement.dir = "";
 
     languageButton.addEventListener('click', () => {
+        // Toggle rtl 
+        if(bodyelement.dir === ""){
+            bodyelement.dir = "rtl";
+        }else{
+            bodyelement.dir = "";
+        }
         // Toggle language
         currentLang = currentLang === 'fr' ? 'ar' : 'fr';
 
@@ -20,3 +28,7 @@
         languageButton.textContent = currentLang === 'fr' ? 'ع' : 'FR';
     });
 
+
+   
+
+    

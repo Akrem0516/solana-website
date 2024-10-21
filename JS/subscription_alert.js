@@ -2,7 +2,7 @@ const form = document.getElementById("subscribe-form");
 const emailInput = document.getElementById("email");
 
 
-form.addEventListener("submit", async (e) => {
+form.addEventListener("submit",(e) => {
     e.preventDefault();
     const email = emailInput.value;
     sumbitForm(email);
