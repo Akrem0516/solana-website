@@ -36,14 +36,14 @@ var z = window.matchMedia("(min-width : 321px) and (max-width : 800px)");
 var s = window.matchMedia("(max-width: 320px)");
 
 
-function for_large(){
+function carouselmovement(j,h){
     let scrollAmount = 0;
     const cardWidth = document.querySelector('.destinations_carousel_card').offsetWidth; 
-    const gap = 35; 
+    const gap = j; 
     const numberOfCards = document.querySelectorAll('.destinations_carousel_card').length;
     
     // Calculate the maximum scroll width
-    const maxScroll = (cardWidth + gap ) * ( numberOfCards - "4" ) ;
+    const maxScroll = (cardWidth + gap ) * ( numberOfCards - h ) ;
     
     nextBtn.addEventListener('click', () => {
         if (scrollAmount < maxScroll) {
@@ -61,124 +61,46 @@ function for_large(){
         }
     });
 }
+
+// Large screens
 x.addEventListener("change", () => {
-    for_large();
+    carouselmovement(35, 4);
 });
 
 if(x.matches){
-    for_large();
+    carouselmovement(35, 4);
 }
 
 
-
-
-function for_mediumlarge(){
-    let scrollAmount = 0;
-    const cardWidth = document.querySelector('.destinations_carousel_card').offsetWidth; 
-    const gap = 20; 
-    const numberOfCards = document.querySelectorAll('.destinations_carousel_card').length;
-    
-    // Calculate the maximum scroll width
-    const maxScroll = (cardWidth + gap) * ( numberOfCards - "3" );
-    
-    
-    nextBtn.addEventListener('click', () => {
-        if (scrollAmount < maxScroll) {
-            scrollAmount += cardWidth + gap; 
-            if (scrollAmount > maxScroll) scrollAmount = maxScroll; 
-            carousel.style.transform = `translateX(-${scrollAmount}px)`;
-        }
-    });
-    
-    prevBtn.addEventListener('click', () => {
-        if (scrollAmount > 0) {
-            scrollAmount -= cardWidth + gap; 
-            if (scrollAmount < 0) scrollAmount = 0; // Prevent overflow
-            carousel.style.transform = `translateX(-${scrollAmount}px)`;
-        }
-    });
-}
+// Medium large screens
 y.addEventListener("change", () => {
-    for_mediumlarge();
+    carouselmovement(20, 3);
 });
 
 if(y.matches){
-    for_mediumlarge();
+    carouselmovement(20, 3);
 }
 
 
 
 
-
-
-function for_mediumsmall(){
-    let scrollAmount = 0;
-    const cardWidth = document.querySelector('.destinations_carousel_card').offsetWidth; 
-    const gap = 10; 
-    const numberOfCards = document.querySelectorAll('.destinations_carousel_card').length;
-    
-    // Calculate the maximum scroll width
-    const maxScroll = (cardWidth + gap) * (numberOfCards - "2");
-    
-    
-    nextBtn.addEventListener('click', () => {
-        if (scrollAmount < maxScroll) {
-            scrollAmount += cardWidth + gap; 
-            if (scrollAmount > maxScroll) scrollAmount = maxScroll; 
-            carousel.style.transform = `translateX(-${scrollAmount}px)`;
-        }
-    });
-    
-    prevBtn.addEventListener('click', () => {
-        if (scrollAmount > 0) {
-            scrollAmount -= cardWidth + gap; 
-            if (scrollAmount < 0) scrollAmount = 0; // Prevent overflow
-            carousel.style.transform = `translateX(-${scrollAmount}px)`;
-        }
-    });
-}
+// Medium small screens
 z.addEventListener("change", () => {
-    for_mediumsmall();
+    carouselmovement(10, 2);
 });
 
 if(z.matches){
-    for_mediumsmall();
+    carouselmovement(10, 2);
 }
 
 
 
 
-
-function for_small(){
-    let scrollAmount = 0;
-    const cardWidth = document.querySelector('.destinations_carousel_card').offsetWidth; 
-    const gap = 9; 
-    const numberOfCards = document.querySelectorAll('.destinations_carousel_card').length;
-    
-    // Calculate the maximum scroll width
-    const maxScroll = (cardWidth + gap) * (numberOfCards - "2");
-    
-    
-    nextBtn.addEventListener('click', () => {
-        if (scrollAmount < maxScroll) {
-            scrollAmount += cardWidth + gap; 
-            if (scrollAmount > maxScroll) scrollAmount = maxScroll; 
-            carousel.style.transform = `translateX(-${scrollAmount}px)`;
-        }
-    });
-    
-    prevBtn.addEventListener('click', () => {
-        if (scrollAmount > 0) {
-            scrollAmount -= cardWidth + gap; 
-            if (scrollAmount < 0) scrollAmount = 0; // Prevent overflow
-            carousel.style.transform = `translateX(-${scrollAmount}px)`;
-        }
-    });
-}
+// small screens
 s.addEventListener("change", () => {
-    for_small();
+    carouselmovement(9, 2);
 });
 
 if(s.matches){
-    for_small();
+    carouselmovement(9 ,2);
 }
