@@ -41,10 +41,9 @@ function carouselmovement(j,h){
     const cardWidth = document.querySelector('.destinations_carousel_card').offsetWidth; 
     const gap = j; 
     const numberOfCards = document.querySelectorAll('.destinations_carousel_card').length;
-    
+    carousel.style.transform = `translateX(-${scrollAmount}px)`;
     // Calculate the maximum scroll width
     const maxScroll = (cardWidth + gap ) * ( numberOfCards - h ) ;
-    
     nextBtn.addEventListener('click', () => {
         if (scrollAmount < maxScroll) {
             scrollAmount += cardWidth + gap; 
