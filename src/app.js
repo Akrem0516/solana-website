@@ -115,9 +115,9 @@ app.post('/support_client/send_email', (req, res) => {
 
 
 
-app.use(express.static(path.join(__dirname , '../CSS')));
-app.use(express.static(path.join(__dirname , '../JS')));
-app.use(express.static(path.join(__dirname , '../Pics')));
+app.use(express.static(path.join(__dirname , '../public/CSS')));
+app.use(express.static(path.join(__dirname , '../public/JS')));
+app.use(express.static(path.join(__dirname , '../public/Pics')));
 
 //redirections
 app.get('/acceuil', (req, res) => {
@@ -127,19 +127,19 @@ app.get('/acceuil', (req, res) => {
 
 //serve HTML pages
 app.get('/', (req , res) => {
-    res.sendFile('./HTML/acceuil.html',{root : path.resolve(__dirname, '..')});
+    res.sendFile('./public/HTML/acceuil.html',{root : path.resolve(__dirname, '..')});
 });
 app.get('/nos_services', (req , res) => {
-    res.sendFile('./HTML/nos_services.html',{root : path.resolve(__dirname, '..')});
+    res.sendFile('./public/HTML/nos_services.html',{root : path.resolve(__dirname, '..')});
 });
 app.get('/support_client', (req , res) => {
-    res.sendFile('./HTML/support_client.html',{root : path.resolve(__dirname, '..')});
+    res.sendFile('./public/HTML/support_client.html',{root : path.resolve(__dirname, '..')});
 });
 app.get('/a_propos', (req , res) => {
-    res.sendFile('./HTML/a_propos.html',{root : path.resolve(__dirname, '..')});
+    res.sendFile('./public/HTML/a_propos.html',{root : path.resolve(__dirname, '..')});
 });
 app.use((req,res) => {
-    res.status(404).sendFile('./HTML/404.html',{root : path.resolve(__dirname, '..')});
+    res.status(404).sendFile('./public/HTML/404.html',{root : path.resolve(__dirname, '..')});
 });
 
 
