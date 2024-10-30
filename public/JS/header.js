@@ -28,12 +28,14 @@ function manageHamburger() {
 
             hamburger.appendChild(btn);
             menu.classList.add("hide");
+            header_contact.classList.add("hide");
             hamburger.appendChild(menu);
             top_left.appendChild(hamburger);
 
             // Event listener for button
             btn.addEventListener("click", () => {
                 menu.classList.toggle("hide");
+                header_contact.classList.toggle("hide");
                 if (menu.classList.contains('hide')) {
                     body.style.backgroundColor = "";
                     topheader.style.background = "";
@@ -42,6 +44,7 @@ function manageHamburger() {
                     hamburger.classList.remove("open"); 
                     hero_section.classList.remove("hide");
                     footer.classList.remove("hide");
+                    
                 } else {
                     body.style.backgroundColor = 'rgb(22, 36, 36)';
                     topheader.style.backgroundColor = 'rgb(22, 36, 36)';
@@ -67,11 +70,9 @@ function changeLogo() {
     const logos_image = document.getElementById("logos_image");
     if (window.matchMedia("(max-width: 800px)").matches) {
         logos_image.setAttribute('src', 'SolanaLOGO.png');
-        header_contact.classList.add("hide");
         header_pics.classList.add("hide");
     } else {
         logos_image.setAttribute('src', 'solana_website_logo.png');
-        header_contact.classList.remove("hide");
         header_pics.classList.remove("hide");
         body.style.backgroundColor = "";
         topheader.style.background = "";
