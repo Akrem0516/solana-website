@@ -29,7 +29,7 @@ main{
     .contact_us{
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 3px;
     }
     .contact_us_header{
         display: flex;
@@ -237,7 +237,7 @@ main{
 .contact_us{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
 }
 .contact_us_header{
     display: flex;
@@ -445,7 +445,7 @@ main{
 .contact_us{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 7px;
 }
 .contact_us_header{
     display: flex;
@@ -654,7 +654,7 @@ main{
 .contact_us{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
 }
 .contact_us_header{
     display: flex;
