@@ -8,3 +8,37 @@
         justify-content: center;
         z-index: 9999;
     }
+
+
+/* Media Query for small screens */
+@media screen and (max-width : 321px){
+    #loading-screen img{
+        width: 150px;
+    }
+}
+
+
+/* Media Query for medium-small screens */
+
+@media screen and (min-width : 321px) and (max-width : 800px){
+    #loading-screen img{
+        width: 200px;
+    }
+}
+
+/* Media Query for medium-large screens */
+
+@media screen and (min-width : 800px) and (max-width : 1200px){
+    #loading-screen img{
+        width: 250px;
+    }
+}
+
+
+/* Media Query for large screens */
+
+@media screen and (min-width : 1201px ){
+    #loading-screen img{
+        width: 300px;
+    }
+}
