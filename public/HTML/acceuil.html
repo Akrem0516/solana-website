@@ -23,11 +23,16 @@
     <link rel="stylesheet" href="header.css"> <!-- header styling -->
     <link rel="stylesheet" href="acceuil.css"> <!-- main styling -->
     <link rel="stylesheet" href="footer.css"> <!-- footer styling -->
+    <link rel="stylesheet" href="loading.css"> <!-- loaing styling -->
 
 </head>
 
 <body>
+    <div id="loading-screen">
+        <img src="plane.gif" alt="Loading..." />
+    </div>
 
+<div id="content" style="display: none;">
     <!-- header begins-->
 <header>
     <div class="top">
@@ -328,13 +333,19 @@
 </footer>
 <!-- footer ends -->
 
-
+</div>
 
 </body>
 <!--js files-->
+<script src="loading.js" async></script> <!-- loading script -->
 <script src="header.js" async></script> <!-- header script -->
 <script src="subscription_alert.js" defer></script>
 <script src="acceuil.js" defer></script>
 <script src="change_language.js" defer></script>
 
+
+
+<style>
+
+</style>
 </html>
