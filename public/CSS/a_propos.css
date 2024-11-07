@@ -93,7 +93,7 @@ main{
         gap: 25px;
     }
     .engagement_title{
-        font-size: 12px;
+        font-size: 16px;
         font-family: 'Montserrat';
         color: #602600;
     }
@@ -105,15 +105,15 @@ main{
     .engagement_item{
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 10px;
     }
     .item_title{
-        font-size: 8px;
+        font-size: 12px;
         font-family: 'Montserrat';
         color: #F60;
     }
     .item_text{
-        font-size: 8px;
+        font-size: 12px;
         font-family: 'Source Sans pro', sans-serif;
         color: #602600;
     }
@@ -127,12 +127,12 @@ main{
         gap: 15px;
     }
     .vision_title{
-        font-size: 12px;
+        font-size: 16px;
         font-family: 'Montserrat';
         color: #602600;
     }
     .vision_text{
-        font-size: 10px;
+        font-size: 12px;
         font-family: 'Source Sans pro', sans-serif;
         color: #602600;
     }
