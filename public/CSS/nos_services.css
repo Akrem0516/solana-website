@@ -1,7 +1,8 @@
-.nos_services{
+.nos_services {
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
-main{
+
+main {
     display: flex;
     justify-content: center;
 }
@@ -9,8 +10,8 @@ main{
 
 /* Media Query for small screens */
 
-@media screen and (max-width : 320px ){
-    .container{
+@media screen and (max-width : 320px) {
+    .container {
         margin-top: 25px;
         margin-bottom: 25px;
         width: 260px;
@@ -18,7 +19,8 @@ main{
         flex-direction: column;
         gap: 25px;
     }
-    .nos_services_container{
+
+    .nos_services_container {
         display: flex;
         flex-direction: column;
         gap: 40px;
@@ -26,47 +28,53 @@ main{
 
 
 
-    .service{
+    .service {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
-    .service_header{
+
+    .service_header {
         display: flex;
         flex-direction: column;
         gap: 3px;
     }
-    .service_title{
-        font-size: 12px;
+
+    .service_title {
+        font-size: 16px;
         font-family: 'Montserrat';
         color: #602600;
     }
-    .service_subtitle{
+
+    .service_subtitle {
         font-family: 'Source Sans pro', sans-serif;
         font-size: 10px;
         color: #7a7a7a;
     }
-    .service_text{
-        font-size: 8px;
+
+    .service_text {
+        font-size: 12px;
         margin-top: 10px;
         font-family: 'Source Sans pro', sans-serif;
         color: #602600;
     }
-    .service button{
+
+    .service button {
         background-color: #F60;
-        font-size: 5px;
+        font-size: 8px;
         color: #FFFFFF;
         border: none;
-        padding: 2px 3px;
+        padding: 4px 0px;
         border-radius: 3px;
         cursor: pointer;
         transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
         box-shadow: 4px 4px 90px rgba(0, 0, 0, 0.2);
-        width: 49px;
+        width: 80px;
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
     }
-    .service img{
+
+    .service img {
         width: 100%;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     }
@@ -74,8 +82,8 @@ main{
 
 /* Media Query for medium-small screens */
 
-@media screen and (min-width : 321px) and (max-width : 800px){
-    .container{
+@media screen and (min-width : 321px) and (max-width : 800px) {
+    .container {
         margin-top: 30px;
         margin-bottom: 30px;
         width: 300px;
@@ -83,7 +91,8 @@ main{
         flex-direction: column;
         gap: 30px;
     }
-    .nos_services_container{
+
+    .nos_services_container {
         display: flex;
         flex-direction: column;
         gap: 50px;
@@ -91,47 +100,53 @@ main{
 
 
 
-    .service{
+    .service {
         display: flex;
         flex-direction: column;
         gap: 15px;
     }
-    .service_header{
+
+    .service_header {
         display: flex;
         flex-direction: column;
         gap: 3px;
     }
-    .service_title{
-        font-size: 14px;
+
+    .service_title {
+        font-size: 18px;
         font-family: 'Montserrat';
         color: #602600;
     }
-    .service_subtitle{
+
+    .service_subtitle {
         font-family: 'Source Sans pro', sans-serif;
-        font-size: 9px;
+        font-size: 11px;
         color: #7a7a7a;
     }
-    .service_text{
-        font-size: 10px;
+
+    .service_text {
+        font-size: 14px;
         margin-top: 15px;
         font-family: 'Source Sans pro', sans-serif;
         color: #602600;
     }
-    .service button{
+
+    .service button {
         background-color: #F60;
-        font-size: 7px;
+        font-size: 10px;
         color: #FFFFFF;
         border: none;
-        padding: 4px 3px;
+        padding: 5px 0px;
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
         box-shadow: 4px 4px 90px rgba(0, 0, 0, 0.2);
-        width: 67px;
+        width: 95px;
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
     }
-    .service img{
+
+    .service img {
         width: 100%;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     }
@@ -140,9 +155,9 @@ main{
 
 /* Media Query for medium-large screens */
 
-@media screen and (min-width : 801px) and (max-width : 1200px){
-    
-    .container{
+@media screen and (min-width : 801px) and (max-width : 1200px) {
+
+    .container {
         margin-top: 60px;
         margin-bottom: 60px;
         width: 760px;
@@ -150,7 +165,8 @@ main{
         flex-direction: column;
         gap: 60px;
     }
-    .nos_services_container{
+
+    .nos_services_container {
         display: flex;
         flex-direction: column;
         gap: 100px;
@@ -158,33 +174,38 @@ main{
 
 
 
-    .service{
+    .service {
         display: flex;
         flex-direction: column;
         gap: 22px;
     }
-    .service_header{
+
+    .service_header {
         display: flex;
         flex-direction: column;
         gap: 5px;
     }
-    .service_title{
+
+    .service_title {
         font-size: 22px;
         font-family: 'Montserrat';
         color: #602600;
     }
-    .service_subtitle{
+
+    .service_subtitle {
         font-family: 'Source Sans pro', sans-serif;
         font-size: 22px;
         color: #7a7a7a;
     }
-    .service_text{
+
+    .service_text {
         font-size: 14px;
         margin-top: 18px;
         font-family: 'Source Sans pro', sans-serif;
         color: #602600;
     }
-    .service button{
+
+    .service button {
         background-color: #F60;
         font-size: 10px;
         color: #FFFFFF;
@@ -198,7 +219,8 @@ main{
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
     }
-    .service img{
+
+    .service img {
         width: 100%;
         box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
     }
@@ -209,8 +231,8 @@ main{
 
 /* Media Query for large screens */
 
-@media screen and (min-width : 1201px ){
-    .container{
+@media screen and (min-width : 1201px) {
+    .container {
         margin-top: 90px;
         margin-bottom: 90px;
         width: 1100px;
@@ -218,7 +240,8 @@ main{
         flex-direction: column;
         gap: 90px;
     }
-    .nos_services_container{
+
+    .nos_services_container {
         display: flex;
         flex-direction: column;
         gap: 150px;
@@ -226,33 +249,38 @@ main{
 
 
 
-    .service{
+    .service {
         display: flex;
         flex-direction: column;
         gap: 30px;
     }
-    .service_header{
+
+    .service_header {
         display: flex;
         flex-direction: column;
         gap: 5px;
     }
-    .service_title{
+
+    .service_title {
         font-size: 30px;
         font-family: 'Montserrat';
         color: #602600;
     }
-    .service_subtitle{
+
+    .service_subtitle {
         font-family: 'Source Sans pro', sans-serif;
         font-size: 22px;
         color: #7a7a7a;
     }
-    .service_text{
+
+    .service_text {
         font-size: 16px;
         margin-top: 20px;
         font-family: 'Source Sans pro', sans-serif;
         color: #602600;
     }
-    .service button{
+
+    .service button {
         background-color: #F60;
         color: #FFFFFF;
         border: none;
@@ -265,7 +293,8 @@ main{
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
     }
-    .service img{
+
+    .service img {
         width: 100%;
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
     }

@@ -17,7 +17,7 @@ main{
         width: 260px;
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 60px;
     }
         
     .engagement{
@@ -26,27 +26,27 @@ main{
         gap: 15px;
     }
     .engagement_title{
-        font-size: 10px;
+        font-size: 14px;
         font-family: 'Montserrat';
         color: #602600;
     }
     .engagement_items{
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 20px;
     }
     .engagement_item{
         display: flex;
         flex-direction: column;
-        gap: 3px;
+        gap: 5px;
     }
     .item_title{
-        font-size: 6px;
+        font-size: 10px;
         font-family: 'Montserrat';
         color: #F60;
     }
     .item_text{
-        font-size: 6px;
+        font-size: 12px;
         font-family: 'Source Sans pro', sans-serif;
         color: #602600;
     }
@@ -60,12 +60,12 @@ main{
         gap: 10px;
     }
     .vision_title{
-        font-size: 10px;
+        font-size: 14px;
         font-family: 'Montserrat';
         color: #602600;
     }
     .vision_text{
-        font-size: 6px;
+        font-size: 12px;
         font-family: 'Source Sans pro', sans-serif;
         color: #602600;
     }
