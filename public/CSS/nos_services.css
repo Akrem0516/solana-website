@@ -12,8 +12,8 @@ main {
 
 @media screen and (max-width : 320px) {
     .container {
-        margin-top: 25px;
-        margin-bottom: 25px;
+        margin-top: 30px;
+        margin-bottom: 30px;
         width: 260px;
         display: flex;
         flex-direction: column;
