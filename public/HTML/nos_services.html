@@ -23,7 +23,8 @@
 
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        as="style" media="print" onload="this.media='all'">
 
     <!-- font-family -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
@@ -39,36 +40,45 @@
 
     <link rel="stylesheet" href="header.css"> <!-- header styling -->
     <link rel="stylesheet" href="nos_services.css"> <!-- footer styling -->
-    <link rel="stylesheet" href="footer.css"> <!-- footer styling -->
+    <link rel="preload" href="footer.css" as="style">
 
 
 </head>
 
 
-<div id="content" >
+<div id="content">
 
     <!-- header begins-->
     <header>
         <div class="top">
             <div class="top_left">
-                <img id="logos_image" onclick="location.href = 'acceuil'"  class="logo" alt="Solana Travel Algeria LOGO" src="">
+                <img id="logos_image" onclick="location.href = 'acceuil'" class="logo" alt="Solana Travel Algeria LOGO"
+                    src="">
                 <div class="menu">
-                    <a onclick="location.href = 'acceuil'" class="acceuil" data-lang-fr="Acceuil" data-lang-ar="الصفحة الرئيسية" lang="fr">
+                    <a onclick="location.href = 'acceuil'" class="acceuil" data-lang-fr="Acceuil"
+                        data-lang-ar="الصفحة الرئيسية" lang="fr">
                         Acceuil
                     </a>
-                    <a onclick="location.href = 'nos_services'" class="nos_services" data-lang-fr="Nos Services" data-lang-ar="خدماتنا" lang="fr">Nos Services</a>
-                    <a onclick="location.href = 'support_client'" class="support_client" data-lang-fr="Support Client" data-lang-ar="دعم العملاء" lang="fr">Support Client</a>
-                    <a onclick="location.href = 'a_propos'" class="a_propos" data-lang-fr="À Propos" data-lang-ar="حولنا" lang="fr">À Propos</a>
+                    <a onclick="location.href = 'nos_services'" class="nos_services" data-lang-fr="Nos Services"
+                        data-lang-ar="خدماتنا" lang="fr">Nos Services</a>
+                    <a onclick="location.href = 'support_client'" class="support_client" data-lang-fr="Support Client"
+                        data-lang-ar="دعم العملاء" lang="fr">Support Client</a>
+                    <a onclick="location.href = 'a_propos'" class="a_propos" data-lang-fr="À Propos"
+                        data-lang-ar="حولنا" lang="fr">À Propos</a>
                 </div>
             </div>
             <div class="top_right">
                 <div class="header_contact">
-                    <i class="fa-brands fa-instagram" onclick="window.open('https://www.instagram.com/solana_travel_dz/', '_blank');"></i>
-                    <i class="fa-brands fa-facebook" onclick="window.open('https://www.facebook.com/solana.traavel', '_blank');"></i>
-                    <i class="fa-brands fa-tiktok" onclick="window.open('https://www.tiktok.com/@solana_travel2', '_blank');"></i>
-                    <i class="fa-brands fa-whatsapp" onclick="window.open('https://wa.me/+213556534705', '_blank');"></i>
+                    <i class="fa-brands fa-instagram"
+                        onclick="window.open('https://www.instagram.com/solana_travel_dz/', '_blank');"></i>
+                    <i class="fa-brands fa-facebook"
+                        onclick="window.open('https://www.facebook.com/solana.traavel', '_blank');"></i>
+                    <i class="fa-brands fa-tiktok"
+                        onclick="window.open('https://www.tiktok.com/@solana_travel2', '_blank');"></i>
+                    <i class="fa-brands fa-whatsapp"
+                        onclick="window.open('https://wa.me/+213556534705', '_blank');"></i>
                 </div>
-    
+
                 <div class="language">
                     <p class="languagebtn" data-lang-fr="FR" data-lang-ar="ع" lang="fr">ع</p>
                 </div>
@@ -76,14 +86,18 @@
         </div>
         <div class="hero_section">
             <div class="main_text">
-                <p data-lang-fr="Découvrez le monde, avec nos services de voyage." data-lang-ar="اكتشف العالم مع خدمات السفر لدينا." lang="fr">
+                <p data-lang-fr="Découvrez le monde, avec nos services de voyage."
+                    data-lang-ar="اكتشف العالم مع خدمات السفر لدينا." lang="fr">
                     Découvrez le monde, avec nos services de voyage.
                 </p>
                 <div>
-                    <h1 data-lang-fr="Bienvenue chez Solana," data-lang-ar="مرحبًا بكم في سولانا" lang="fr"> Bienvenue chez Solana,</h1>
-                    <h1 data-lang-fr="un monde d'aventures !" data-lang-ar="عالم من المغامرات" lang="fr"> un monde d'aventures !</h1>
+                    <h1 data-lang-fr="Bienvenue chez Solana," data-lang-ar="مرحبًا بكم في سولانا" lang="fr"> Bienvenue
+                        chez Solana,</h1>
+                    <h1 data-lang-fr="un monde d'aventures !" data-lang-ar="عالم من المغامرات" lang="fr"> un monde
+                        d'aventures !</h1>
                 </div>
-                <button onclick="location.href='/support_client'" data-lang-fr="Découvrir" data-lang-ar="اكتشف" lang="fr">Découvrir</button>
+                <button onclick="location.href='/support_client'" data-lang-fr="Découvrir" data-lang-ar="اكتشف"
+                    lang="fr">Découvrir</button>
             </div>
             <div class="header_pics">
                 <img src="/Places/hotel_egypt.jpeg" alt="Egypt Hotel by solana travel Algeria">
@@ -113,7 +127,7 @@
                             data-lang-ar="حجز سريع وفعال لتذاكر النقل الخاصة بك">Réservation rapide et efficace de vos
                             billets de transport</h3>
                     </div>
-                    <img src="Services/travel_concept_with_tickets.jpg"  alt="Buy flight tiket with Solana Travel">
+                    <img src="Services/travel_concept_with_tickets.jpg" alt="Buy flight tiket with Solana Travel">
                     <div class="service_text">
                         <p data-lang-fr="Chez Solana Travel, nous offrons un service complet de billetterie pour répondre à tous vos besoins de voyage. 
                             Que vous souhaitiez réserver des billets d'avion, de train, de bus ou des croisières, notre équipe se charge de trouver les meilleures options disponibles, 
@@ -169,7 +183,8 @@
                             data-lang-ar="إقامات مريحة بأفضل الأسعار في جميع أنحاء العالم">Des séjours confortables aux
                             meilleurs prix, partout dans le monde</h3>
                     </div>
-                    <img src="Services/female_receptionist_elegant_suit_work_hours.jpg"  alt="Hotel Reservatio with SOLANA Travel">
+                    <img src="Services/female_receptionist_elegant_suit_work_hours.jpg"
+                        alt="Hotel Reservatio with SOLANA Travel">
                     <div class="service_text">
                         <p data-lang-fr="Notre agence vous offre un service complet de réservation d'hôtels pour répondre à tous vos besoins de séjour. Que ce soit pour un voyage d'affaires, des vacances en famille ou une escapade romantique, nous vous aidons à trouver et réserver l'hébergement idéal, adapté à votre budget et à vos préférences. Grâce à notre vaste réseau d'hôtels partenaires, vous pouvez choisir parmi une large gamme d'options, allant des hôtels de luxe aux établissements économiques, en passant par des appartements et des villas."
                             data-lang-ar="وكالتنا تقدم لك خدمة شاملة لحجز الفنادق لتلبية جميع احتياجات إقامتك. سواء كان ذلك لرحلة عمل، عطلة عائلية أو هروب رومانسي، نحن هنا لمساعدتك في العثور على والحجز للإقامة المثالية، المتوافقة مع ميزانيتك وتفضيلاتك. بفضل شبكتنا الواسعة من الفنادق الشريكة، يمكنك الاختيار من بين مجموعة واسعة من الخيارات، بدءًا من الفنادق الفاخرة إلى المؤسسات الاقتصادية، بالإضافة إلى الشقق والفيلات.">
@@ -206,7 +221,7 @@
                         <h3 class="service_subtitle" data-lang-fr="Votre sécurité, notre priorité"
                             data-lang-ar="أمانك، أولويتنا">Votre sécurité, notre priorité</h3>
                     </div>
-                    <img src="Services/travel_inssurance.jpg"  alt="Travel Inssurance by Solana Travel and Macir vie">
+                    <img src="Services/travel_inssurance.jpg" alt="Travel Inssurance by Solana Travel and Macir vie">
                     <div class="service_text">
                         <p data-lang-fr="Nous sommes fiers de vous offrir une assurance voyage complète en partenariat avec Macir Vie. Cette assurance est conçue pour vous fournir une tranquillité d'esprit pendant vos déplacements. Elle couvre un large éventail de situations, y compris les frais médicaux d'urgence, l'assistance en cas d'accident, et la protection de vos bagages contre les pertes ou les dommages."
                             data-lang-ar="نحن فخورون بتقديم تأمين سفر شامل بالشراكة مع Macir Vie. تم تصميم هذا التأمين لتوفير راحة البال أثناء رحلاتك. يغطي مجموعة واسعة من الحالات، بما في ذلك النفقات الطبية الطارئة، والمساعدة في حالة الحوادث، وحماية أمتعتك من الفقدان أو الأضرار.">
@@ -244,7 +259,7 @@
                         <h3 class="service_subtitle" data-lang-fr="Un voyage spirituel inoubliable"
                             data-lang-ar="رحلة روحية لا تنسى">Un voyage spirituel inoubliable</h3>
                     </div>
-                    <img src="Services/holy_kaaba.jpg"  alt="Hajj and Omra with SOLANA Travel">
+                    <img src="Services/holy_kaaba.jpg" alt="Hajj and Omra with SOLANA Travel">
                     <div class="service_text">
                         <p data-lang-fr="Voyager pour le Hajj ou l’Omra est une expérience unique et profondément spirituelle. Pour que vous puissiez vous concentrer pleinement sur votre foi, nous prenons en charge chaque détail de votre voyage sacré. De la gestion des formalités administratives à la réservation de vols et d’hébergements à La Mecque et Médine, nous vous accompagnons à chaque étape."
                             data-lang-ar="السفر لأداء الحج أو العمرة هو تجربة فريدة وعميقة الروح. لكي تتمكن من التركيز تمامًا على إيمانك، نتولى كل تفاصيل رحلتك المقدسة. من إدارة الإجراءات الإدارية إلى حجز الرحلات الجوية والإقامة في مكة والمدينة، نرافقك في كل خطوة.">
@@ -277,7 +292,7 @@
                         <h3 class="service_subtitle" data-lang-fr="Une expérience de découverte sans pareil"
                             data-lang-ar="تجربة اكتشاف لا تضاهى">Une expérience de découverte sans pareil</h3>
                     </div>
-                    <img src="Services/organized_trip.jpg"  alt="Orginzed trips by SOLANA travel">
+                    <img src="Services/organized_trip.jpg" alt="Orginzed trips by SOLANA travel">
                     <div class="service_text">
                         <p data-lang-fr="Explorez le monde sans stress grâce à nos voyages organisés. Nous vous proposons des circuits soigneusement planifiés qui vous permettent de découvrir des destinations emblématiques tout en profitant de services de qualité. Chaque itinéraire est conçu pour vous offrir un équilibre parfait entre découvertes culturelles, activités locales et moments de détente."
                             data-lang-ar="استكشف العالم دون قلق بفضل رحلاتنا المنظمة. نقدم لك جولات مخططة بعناية تتيح لك اكتشاف وجهات شهيرة مع الاستمتاع بخدمات عالية الجودة. تم تصميم كل مسار لتقديم توازن مثالي بين الاكتشافات الثقافية، والأنشطة المحلية، ولحظات الاسترخاء.">
@@ -311,7 +326,7 @@
                             data-lang-ar="بسط إجراءاتك الإدارية للسفر بكل هدوء">Simplifiez vos démarches administratives
                             pour voyager en toute sérénité</h3>
                     </div>
-                    <img src="Services/visa_demand.jpg"  alt="VISA Application with SOLANA Travel">
+                    <img src="Services/visa_demand.jpg" alt="VISA Application with SOLANA Travel">
                     <div class="service_text">
                         <p data-lang-fr="Notre service de demandes de visa simplifie le processus pour obtenir les autorisations nécessaires afin de voyager vers votre destination préférée. Que ce soit pour un voyage touristique, d'affaires, ou familial, nous vous assistons dans la préparation des documents requis et veillons à ce que votre dossier soit complet et conforme aux exigences des ambassades."
                             data-lang-ar="خدمتنا لطلبات التأشيرة تبسط العملية للحصول على التصاريح اللازمة للسفر إلى وجهتك المفضلة. سواء كان ذلك لرحلة سياحية، عمل، أو عائلية، نساعدك في إعداد الوثائق المطلوبة ونتأكد من أن ملفك مكتمل ومتوافق مع متطلبات السفارات.">
@@ -345,7 +360,7 @@
                             data-lang-ar="مغامرات مصممة حسب الطلب لذكريات لا تُنسى">Des aventures sur mesure pour des
                             souvenirs inoubliables</h3>
                     </div>
-                    <img src="Services/personalized_trip.jpg"  alt="Personalized trip by SOLANA Travel">
+                    <img src="Services/personalized_trip.jpg" alt="Personalized trip by SOLANA Travel">
                     <div class="service_text">
                         <p data-lang-fr="Créez le voyage de vos rêves avec notre service de voyages personnalisés. Nous vous offrons la possibilité de concevoir un itinéraire sur mesure, adapté à vos préférences et à vos envies, que ce soit pour une escapade romantique, une aventure en famille, ou un voyage de découverte culturelle."
                             data-lang-ar="أنشئ رحلة أحلامك مع خدمتنا للرحلات المخصصة. نقدم لك إمكانية تصميم مسار مخصص يتناسب مع تفضيلاتك ورغباتك، سواء كانت لرحلة رومانسية، مغامرة عائلية، أو رحلة اكتشاف ثقافية.">
@@ -375,45 +390,55 @@
 
 
 
-<!-- footer begins -->
-<footer>
-    <div class="bottom">
-        <div class="top_bottom">
-            <div class="experts_numbers">
-                <h3 class="experts_numbers_text" data-lang-fr="parlez à nos experts à :" data-lang-ar="تحدث إلى خبرائنا في :" lang="fr">
-                    parlez à nos experts à :
+    <!-- footer begins -->
+    <footer>
+        <div class="bottom">
+            <div class="top_bottom">
+                <div class="experts_numbers">
+                    <h3 class="experts_numbers_text" data-lang-fr="parlez à nos experts à :"
+                        data-lang-ar="تحدث إلى خبرائنا في :" lang="fr">
+                        parlez à nos experts à :
+                    </h3>
+                    <div class="phone_numbers">
+                        <p data-lang-fr="+213 556 53 47 05" data-lang-ar="05 47 53 556 213+">+213 556 53 47 05</p>
+                        <p data-lang-fr="+213 556 53 47 05" data-lang-ar="57 21 79 777 213+">+213 777 79 21 57</p>
+                    </div>
+                </div>
+                <h3 class="follow_us" onclick="window.open('https://bit.ly/m/solana_travel', '_blank');"
+                    data-lang-fr="Suivez-nous" data-lang-ar="تابعنا" lang="fr">
+                    Suivez-nous
                 </h3>
-                <div class="phone_numbers">
-                    <p data-lang-fr="+213 556 53 47 05" data-lang-ar="05 47 53 556 213+">+213 556 53 47 05</p>
-                    <p data-lang-fr="+213 556 53 47 05" data-lang-ar="57 21 79 777 213+">+213 777 79 21 57</p>
+            </div>
+            <div class="bottom_bottom">
+                <div class="contact">
+                    <h3 class="contact_text" data-lang-fr="Contact" data-lang-ar="اتصل" lang="fr">Contact</h3>
+                    <div class="contact_details">
+                        <p data-lang-fr="Coop EL BADR Nº75 Bordj El Bahri, Alger, Algérie"
+                            data-lang-ar=" برج البحري الجزائر" lang="fr">Coop EL BADR Nº75 Bordj El Bahri, Alger,
+                            Algérie</p>
+                        <p data-lang-fr="solanatraveldz@gmail.com" data-lang-ar="solanatraveldz@gmail.com" lang="fr">
+                            solanatraveldz@gmail.com</p>
+                    </div>
+                </div>
+                <div class="entreprise">
+                    <h3 class="entreprise_text" data-lang-fr="Entreprise" data-lang-ar="شركة" lang="fr">Entreprise</h3>
+                    <div class="entreprise_details">
+                        <p onclick="location.href='/a_propos'" data-lang-fr="À Propos de nous"
+                            data-lang-ar="معلومات عنا" lang="fr">À Propos de nous</p>
+                        <p onclick="location.href='#reviews'" data-lang-fr="Avis sur SOLANA TRAVEL"
+                            data-lang-ar="آراء حول سولانا ترافل" lang="fr">Avis sur SOLANA TRAVEL</p>
+                        <p onclick="location.href='/support_client/#map'" data-lang-fr="Localisation"
+                            data-lang-ar="موقع" lang="fr">Localisation</p>
+                        <p onclick="window.open('https://wa.me/+213556534705', '_blank');" data-lang-fr="Contactez-nous"
+                            data-lang-ar="اتصل بنا" lang="fr">Contactez-nous</p>
+                    </div>
                 </div>
             </div>
-            <h3 class="follow_us" onclick="window.open('https://bit.ly/m/solana_travel', '_blank');" data-lang-fr="Suivez-nous" data-lang-ar="تابعنا" lang="fr">
-                Suivez-nous
-            </h3>
+            <p class="copyrhight" data-lang-fr="Droits d'auteur © Mezouri 2024"
+                data-lang-ar="حقوق الطبع والنشر © مزوري 2024">Copyright © Mezouri 2024</p>
         </div>
-        <div class="bottom_bottom">
-            <div class="contact">
-                <h3 class="contact_text" data-lang-fr="Contact" data-lang-ar="اتصل" lang="fr">Contact</h3>
-                <div class="contact_details">
-                    <p data-lang-fr="Coop EL BADR Nº75 Bordj El Bahri, Alger, Algérie" data-lang-ar=" برج البحري الجزائر" lang="fr">Coop EL BADR Nº75 Bordj El Bahri, Alger, Algérie</p>
-                    <p data-lang-fr="solanatraveldz@gmail.com" data-lang-ar="solanatraveldz@gmail.com" lang="fr">solanatraveldz@gmail.com</p>
-                </div>
-            </div>
-            <div class="entreprise">
-                <h3 class="entreprise_text" data-lang-fr="Entreprise" data-lang-ar="شركة" lang="fr">Entreprise</h3>
-                <div class="entreprise_details">
-                    <p onclick="location.href='/a_propos'" data-lang-fr="À Propos de nous" data-lang-ar="معلومات عنا" lang="fr">À Propos de nous</p>
-                    <p onclick="location.href='#reviews'" data-lang-fr="Avis sur SOLANA TRAVEL" data-lang-ar="آراء حول سولانا ترافل" lang="fr">Avis sur SOLANA TRAVEL</p>
-                    <p onclick="location.href='/support_client/#map'" data-lang-fr="Localisation" data-lang-ar="موقع" lang="fr">Localisation</p>
-                    <p onclick="window.open('https://wa.me/+213556534705', '_blank');" data-lang-fr="Contactez-nous" data-lang-ar="اتصل بنا" lang="fr">Contactez-nous</p>
-                </div>
-            </div>
-        </div>
-        <p class="copyrhight" data-lang-fr="Droits d'auteur © Mezouri 2024" data-lang-ar="حقوق الطبع والنشر © مزوري 2024">Copyright © Mezouri 2024</p>
-    </div>
-</footer>
-<!-- footer ends -->
+    </footer>
+    <!-- footer ends -->
 
 </div>
 
