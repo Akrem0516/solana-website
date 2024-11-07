@@ -94,22 +94,3 @@ setupResponsiveElements();
 
 
 
-// Select all images with the class 'lazy'
-const lazyImages = document.querySelectorAll('img.lazy');
-
-const lazyLoad = (entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const img = entry.target;
-      img.src = img.dataset.src; // Load the image source
-      img.classList.remove('lazy'); // Remove the lazy class
-      observer.unobserve(img); // Stop observing once loaded
-    }
-  });
-};
-
-const observer = new IntersectionObserver(lazyLoad);
-
-lazyImages.forEach(img => {
-  observer.observe(img);
-});
