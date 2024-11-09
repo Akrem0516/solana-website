@@ -29,6 +29,7 @@
     }
     .airlines img{
         width: 40px;
+        height: auto;
         display: inline-block;
         object-fit: contain;
         mix-blend-mode: color-burn;
@@ -63,6 +64,7 @@
     }
     .main_point img {
         width: 18px;
+        height: auto;
     }
     .main_point_title{
         font-size: 12px;
@@ -144,6 +146,7 @@
     
     .destinations_carousel img {
         width: 100%; 
+        height: auto;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
@@ -202,6 +205,7 @@
     .reviews_grid img{
         box-shadow: 5px 0px 9px #f0f0f0;
         width: 160px;
+        height: auto;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
@@ -250,6 +254,7 @@
     }
     .airlines img{
         width: 40px;
+        height: auto;
         display: inline-block;
         object-fit: contain;
         mix-blend-mode: color-burn;
@@ -284,6 +289,7 @@
     }
     .main_point img {
         width: 20px;
+        height: auto;
     }
     .main_point_title{
         font-size: 12px;
@@ -366,6 +372,7 @@
     
     .destinations_carousel img {
         width: 100%; 
+        height: auto;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
@@ -425,6 +432,7 @@
     .reviews_grid img{
         box-shadow: 5px 0px 9px #f0f0f0;
         width: 190px;
+        height: auto;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
@@ -475,7 +483,7 @@
     }
     .airlines img{
         width: 60px;
-    
+        height: auto;
         display: inline-block;
         object-fit: contain;
         mix-blend-mode: color-burn;
@@ -504,6 +512,7 @@
     }
     .main_point img {
         width: 20px;
+        height: auto;
     }
     .main_point_title{
         font-size: 14px;
@@ -583,6 +592,7 @@
     
     .destinations_carousel img {
         width: 100%; 
+        height: auto;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
@@ -643,6 +653,7 @@
     .reviews_grid img{
         box-shadow: 5px 0px 9px #f0f0f0;
         width: 210px;
+        height: auto;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
@@ -697,7 +708,7 @@ main{
 }
 .airlines img{
     width: 100px;
-
+    height: auto;
     display: inline-block;
     object-fit: contain;
     mix-blend-mode: color-burn;
@@ -726,6 +737,7 @@ main{
 
 .main_point img{
     width: 25px;
+    height: auto;
 }
 
 .main_point_title{
@@ -802,6 +814,7 @@ main{
 
 .destinations_carousel img {
     width: 100%; 
+    height: auto;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -858,6 +871,7 @@ main{
 .reviews_grid img{
     box-shadow: 5px 0px 9px #f0f0f0;
     width: 300px;
+    height: auto;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
