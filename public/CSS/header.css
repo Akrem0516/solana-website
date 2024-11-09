@@ -196,11 +196,7 @@ html{
         font-size: 10px;
     }
     .header_pics{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        gap: 10px;
-        
+        display: none;
     }
     .header_pics img{
         width: 140px;
@@ -367,11 +363,7 @@ html{
         font-size: 11px;
     }
     .header_pics{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        gap: 10px;
-        
+        display: none;
     }
     .header_pics img{
         width: 140px;
