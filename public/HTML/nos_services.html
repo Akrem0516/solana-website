@@ -21,11 +21,6 @@
     <title>Solana Travel</title>
 
 
-
-    <!-- Font Awesome -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        as="style" media="print" onload="this.media='all'">
-
     <!-- font-family -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <!-- Montserrat font -->
@@ -40,7 +35,7 @@
 
     <link rel="stylesheet" href="header.css"> <!-- header styling -->
     <link rel="stylesheet" href="nos_services.css"> <!-- footer styling -->
-    <link rel="preload" href="footer.css" as="style">
+    <link rel="stylesheet" href="footer.css" as="style">
 
 
 </head>
@@ -48,67 +43,53 @@
 
 <div id="content">
 
-    <!-- header begins-->
-    <header>
-        <div class="top">
-            <div class="top_left">
-                <img id="logos_image" onclick="location.href = 'acceuil'" class="logo" alt="Solana Travel Algeria LOGO"
-                    src="">
-                <div class="menu">
-                    <a onclick="location.href = 'acceuil'" class="acceuil" data-lang-fr="Acceuil"
-                        data-lang-ar="الصفحة الرئيسية" lang="fr">
-                        Acceuil
-                    </a>
-                    <a onclick="location.href = 'nos_services'" class="nos_services" data-lang-fr="Nos Services"
-                        data-lang-ar="خدماتنا" lang="fr">Nos Services</a>
-                    <a onclick="location.href = 'support_client'" class="support_client" data-lang-fr="Support Client"
-                        data-lang-ar="دعم العملاء" lang="fr">Support Client</a>
-                    <a onclick="location.href = 'a_propos'" class="a_propos" data-lang-fr="À Propos"
-                        data-lang-ar="حولنا" lang="fr">À Propos</a>
-                </div>
-            </div>
-            <div class="top_right">
-                <div class="header_contact">
-                    <i class="fa-brands fa-instagram"
-                        onclick="window.open('https://www.instagram.com/solana_travel_dz/', '_blank');"></i>
-                    <i class="fa-brands fa-facebook"
-                        onclick="window.open('https://www.facebook.com/solana.traavel', '_blank');"></i>
-                    <i class="fa-brands fa-tiktok"
-                        onclick="window.open('https://www.tiktok.com/@solana_travel2', '_blank');"></i>
-                    <i class="fa-brands fa-whatsapp"
-                        onclick="window.open('https://wa.me/+213556534705', '_blank');"></i>
-                </div>
-
-                <div class="language">
-                    <p class="languagebtn" data-lang-fr="FR" data-lang-ar="ع" lang="fr">ع</p>
-                </div>
+   <!-- header begins-->
+<header>
+    <div class="top">
+        <div class="top_left">
+            <img id="logos_image" onclick="location.href = 'acceuil'" class="logo"  alt="Solana Travel Algeria LOGO" src="">
+            <div class="menu">
+                <a onclick="location.href = 'acceuil'" class="acceuil" data-lang-fr="Acceuil" data-lang-ar="الصفحة الرئيسية" lang="fr">
+                    Acceuil
+                </a>
+                <a onclick="location.href = 'nos_services'" class="nos_services" data-lang-fr="Nos Services" data-lang-ar="خدماتنا" lang="fr">Nos Services</a>
+                <a onclick="location.href = 'support_client'" class="support_client" data-lang-fr="Support Client" data-lang-ar="دعم العملاء" lang="fr">Support Client</a>
+                <a onclick="location.href = 'a_propos'" class="a_propos" data-lang-fr="À Propos" data-lang-ar="حولنا" lang="fr">À Propos</a>
             </div>
         </div>
-        <div class="hero_section">
-            <div class="main_text">
-                <p data-lang-fr="Découvrez le monde, avec nos services de voyage."
-                    data-lang-ar="اكتشف العالم مع خدمات السفر لدينا." lang="fr">
-                    Découvrez le monde, avec nos services de voyage.
-                </p>
-                <div>
-                    <h1 data-lang-fr="Bienvenue chez Solana," data-lang-ar="مرحبًا بكم في سولانا" lang="fr"> Bienvenue
-                        chez Solana,</h1>
-                    <h1 data-lang-fr="un monde d'aventures !" data-lang-ar="عالم من المغامرات" lang="fr"> un monde
-                        d'aventures !</h1>
-                </div>
-                <button onclick="location.href='/support_client'" data-lang-fr="Découvrir" data-lang-ar="اكتشف"
-                    lang="fr">Découvrir</button>
+        <div class="top_right">
+            <div class="header_contact">
+                <img src="Font Awesome/instagram-brands-solid.svg" onclick="window.open('https://www.instagram.com/solana_travel_dz/', '_blank');" alt="instagram logo">
+                <img src="Font Awesome/facebook-brands-solid.svg" onclick="window.open('https://www.facebook.com/solana.traavel', '_blank');" alt="facebook logo">
+                <img src="Font Awesome/tiktok-brands-solid.svg" onclick="window.open('https://www.tiktok.com/@solana_travel2', '_blank');" alt="tiktok logo">
+                <img src="Font Awesome/whatsapp-brands-solid.svg" onclick="window.open('https://wa.me/+213556534705', '_blank');" alt="whatsapp logo">
             </div>
-            <div class="header_pics">
-                <img src="/Places/hotel_egypt.jpg" alt="Egypt Hotel by solana travel Algeria">
-                <img src="/Places/china.jpg" class="" alt="China by solana travel Algeria">
-                <img src="/Places/champs-elysees.jpg" class="Champs Elysees by solana travel Algeria" alt="">
-                <img src="/Places/moscow.jpg" class="" alt="Moscow by solana travel Algeria">
+
+            <div class="language">
+                <p class="languagebtn" data-lang-fr="FR" data-lang-ar="ع" lang="fr">ع</p>
             </div>
         </div>
-    </header>
-    <!-- header ends-->
-
+    </div>
+    <div class="hero_section">
+        <div class="main_text">
+            <p data-lang-fr="Découvrez le monde, avec nos services de voyage." data-lang-ar="اكتشف العالم مع خدمات السفر لدينا." lang="fr">
+                Découvrez le monde, avec nos services de voyage.
+            </p>
+            <div>
+                <h1 data-lang-fr="Bienvenue chez Solana," data-lang-ar="مرحبًا بكم في سولانا" lang="fr"> Bienvenue chez Solana,</h1>
+                <h1 data-lang-fr="un monde d'aventures !" data-lang-ar="عالم من المغامرات" lang="fr"> un monde d'aventures !</h1>
+            </div>
+            <button onclick="location.href='/support_client'" data-lang-fr="Découvrir" data-lang-ar="اكتشف" lang="fr">Découvrir</button>
+        </div>
+        <div class="header_pics">
+            <img src="/Places/hotel_egypt.jpg"  alt="Egypt Hotel by solana travel Algeria">
+            <img src="/Places/china.jpg" class=""  alt="China by solana travel Algeria">
+            <img src="/Places/champs-elysees.jpg"  class="Champs Elysees by solana travel Algeria" alt="">
+            <img src="/Places/moscow.jpg" class=""  alt="Moscow by solana travel Algeria">
+        </div>
+    </div>
+</header>
+<!-- header ends-->
 
 
 

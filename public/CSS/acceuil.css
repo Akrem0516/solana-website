@@ -59,10 +59,10 @@
         display: flex;               
         flex-direction: column;
         gap: 7px;
+        align-items: center;
     }
-    .main_point i{
-        font-size: 20px;
-        color: #F60;
+    .main_point img {
+        width: 18px;
     }
     .main_point_title{
         font-size: 12px;
@@ -103,15 +103,14 @@
         border-radius: 15px;
     }
     
-    .carousel_container i {
-        font-size: 19px;
-        color: #F60;
+    .carousel_container .carousel_button {
+        width: 19px;
         box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.2);
         transition: box-shadow 0.4s;
         border-radius: 30px;
     }
     
-    .carousel_container i:hover {
+    .carousel_container .carousel_button:hover {
         box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.2);
         border-radius: 50px;
         cursor: pointer;
@@ -265,7 +264,7 @@
         gap: 30px;
     }
     .presentation_title{
-        font-size: 14px;
+        font-size: 16px;
         font-family: 'Montserrat';
         color: #602600;
         text-align: center;
@@ -281,10 +280,10 @@
         display: flex;               
         flex-direction: column;
         gap: 10px;
+        align-items: center;
     }
-    .main_point i{
-        font-size: 22px;
-        color: #F60;
+    .main_point img {
+        width: 20px;
     }
     .main_point_title{
         font-size: 12px;
@@ -326,15 +325,14 @@
         padding: 10px;
     }
     
-    .carousel_container i {
-        font-size: 20px;
-        color: #F60;
+    .carousel_container .carousel_button{
+        width: 20px;
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
         transition: box-shadow 0.4s;
         border-radius: 30px;
     }
     
-    .carousel_container i:hover {
+    .carousel_container .carousel_button:hover {
         box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.2);
         border-radius: 50px;
         cursor: pointer;
@@ -496,7 +494,7 @@
     .presentation_main_points{
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;   
+        align-items: baseline;   
     }
     .main_point{
         display: flex;               
@@ -504,9 +502,8 @@
         gap: 15px;
         width: 170px;
     }
-    .main_point i{
-        font-size: 26px;
-        color: #F60;
+    .main_point img {
+        width: 20px;
     }
     .main_point_title{
         font-size: 14px;
@@ -545,15 +542,14 @@
         padding: 20px 25px;
     }
     
-    .carousel_container i {
-        font-size: 35px;
-        color: #F60;
+    .carousel_container .carousel_button {
+        width: 35px;
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
         transition: box-shadow 0.4s;
         border-radius: 50px;
     }
     
-    .carousel_container i:hover {
+    .carousel_container .carousel_button:hover {
         box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.2);
         border-radius: 50px;
         cursor: pointer;
@@ -719,7 +715,7 @@ main{
 .presentation_main_points{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;   
+    align-items: baseline;   
 }
 .main_point{
     display: flex;               
@@ -727,10 +723,11 @@ main{
     gap: 20px;
     width: 250px;
 }
-.main_point i{
-    font-size: 30px;
-    color: #F60;
+
+.main_point img{
+    width: 25px;
 }
+
 .main_point_title{
     font-size: 16px;
     font-family: 'Montserrat';
@@ -764,17 +761,16 @@ main{
     padding: 30px 20px;
 }
 
-.carousel_container i {
-    font-size: 40px;
-    color: #F60;
+.carousel_container .carousel_button{
+    width: 40px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.4s;
-    border-radius: 50px;
+    border-radius: 40px;
 }
 
-.carousel_container i:hover {
+.carousel_container .carousel_button:hover {
     box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.2);
-    border-radius: 50px;
+    border-radius: 40px;
     cursor: pointer;
 }
 .destinations_carousel_container{

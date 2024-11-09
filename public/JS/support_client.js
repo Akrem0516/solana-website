@@ -1,10 +1,11 @@
 const questions = document.querySelectorAll('.FAQ_question');
 
 questions.forEach((question) => {
+    const q = question.querySelector('.question');
     const caret = question.querySelector('.fa-caret-down');
     const answer = question.querySelector('.answer');
 
-    caret.addEventListener('click', () => {
+    q.addEventListener('click', () => {
         const isHidden = answer.classList.contains('hide');
         
         if (isHidden) {

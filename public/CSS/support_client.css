@@ -132,14 +132,9 @@ main {
         align-items: flex-start;
     }
 
-    .txt i {
-        font-size: 8px;
-        color: #F60;
-        background-color: #602600;
-        padding: 4px;
-        border-top-left-radius: 2px;
-        border-bottom-left-radius: 2px;
-
+    .txt img {
+        width: 11px;
+        padding: 3px;
     }
 
     .txt input {
@@ -230,9 +225,9 @@ main {
         ;
     }
 
-    .question i {
-        font-size: 14px;
-        margin-top: -1px;
+    .question img {
+        width: 9px;
+        margin-top: -5px;
         transition: transform 0.4s ease;
     }
 
@@ -367,14 +362,9 @@ main {
         align-items: flex-start;
     }
 
-    .txt i {
-        font-size: 10px;
-        color: #F60;
-        background-color: #602600;
-        padding: 5px;
-        border-top-left-radius: 4px;
-        border-bottom-left-radius: 4px;
-
+    .txt img {
+        width: 14px;
+        padding: 4px;
     }
 
     .txt input {
@@ -466,9 +456,9 @@ main {
         ;
     }
 
-    .question i {
-        font-size: 14px;
-        margin-top: -2px;
+    .question img {
+        width: 9px;
+        margin-top: -3px;
         transition: transform 0.4s ease;
     }
 
@@ -603,11 +593,9 @@ main {
         align-items: flex-start;
     }
 
-    .txt i {
-        font-size: 14px;
-        color: #F60;
-        background-color: #602600;
-        padding: 8px;
+    .txt img {
+        width: 18px;
+        padding: 7px;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
 
@@ -615,7 +603,7 @@ main {
 
     .txt input {
         width: 100%;
-        height: 25px;
+        height: 30px;
         font-family: 'Source Sans pro', sans-serif;
         font-size: 12px;
         border-top-right-radius: 5px;
@@ -694,17 +682,18 @@ main {
         width: 380px;
         align-items: center;
     }
+    .question:hover{
+        cursor: pointer;
+    }
 
     .question_title {
         font-size: 14px;
         font-family: 'Montserrat';
         color: #602600;
-        ;
     }
 
-    .question i {
-        font-size: 22px;
-        margin-top: -3px;
+    .question img {
+        width: 12px;
         transition: transform 0.4s ease;
     }
 
@@ -838,10 +827,8 @@ main {
         align-items: flex-start;
     }
 
-    .txt i {
-        font-size: 16px;
-        color: #F60;
-        background-color: #602600;
+    .txt img {
+        width: 20px;
         padding: 10px;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
@@ -930,20 +917,22 @@ main {
         align-items: center;
     }
 
+    .question:hover{
+        cursor: pointer;
+    }
+
     .question_title {
         font-size: 16px;
         font-family: 'Montserrat';
         color: #602600;
-        ;
     }
 
-    .question i {
-        font-size: 26px;
-        margin-top: -3px;
+    .question img {
+        width: 16px;
         transition: transform 0.4s ease;
     }
 
-    .question i:hover {
+    .question img:hover {
         cursor: pointer;
     }
 
