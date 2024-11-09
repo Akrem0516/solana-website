@@ -241,7 +241,7 @@ main {
         cursor: pointer;
         transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
         box-shadow: 4px 4px 90px rgba(0, 0, 0, 0.2);
-        width: 111px;
+        width: 120px;
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
     }
@@ -315,7 +315,7 @@ main {
         cursor: pointer;
         transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
         box-shadow: 4px 4px 90px rgba(0, 0, 0, 0.2);
-        width: 145px;
+        width: 150px;
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
     }

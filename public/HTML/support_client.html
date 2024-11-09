@@ -164,7 +164,8 @@
                             <label for="email" data-lang-fr="Email" data-lang-ar="البريد الإلكتروني">Email</label>
                             <div class="txt">
                                 <img src="Font Awesome/envelope-solid.svg" alt="envelope">
-                                <input type="email" id="email" name="email" placeholder="Saisir votre Email" required>
+                                <input type="email" id="email" name="email" placeholder="Saisir votre Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                                title="S'il vous plaît, mettez une adresse email valide.">
                             </div>
                         </div>
 
@@ -335,6 +336,17 @@
                     <p onclick="location.href='#reviews'" data-lang-fr="Avis sur SOLANA TRAVEL" data-lang-ar="آراء حول سولانا ترافل" lang="fr">Avis sur SOLANA TRAVEL</p>
                     <p onclick="location.href='/support_client/#map'" data-lang-fr="Localisation" data-lang-ar="موقع" lang="fr">Localisation</p>
                     <p onclick="window.open('https://wa.me/+213556534705', '_blank');" data-lang-fr="Contactez-nous" data-lang-ar="اتصل بنا" lang="fr">Contactez-nous</p>
+                </div>
+            </div>
+            <div class="subscription_session">
+                <div class="subscription-form">
+                    <h2 data-lang-fr="Abonnez-vous à notre newsletter" data-lang-ar="اشترك في النشرة الإخبارية لدينا" lang="fr">Abonnez-vous à notre newsletter</h2>
+                    <form id="subscribe-form">
+                        <input type="email" name="email" id="email" placeholder="Votre email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="S'il vous plaît, mettez une adresse email valide.">
+                        <button type="submit" data-lang-fr="S'abonner" data-lang-ar="اشترك" lang="fr">S'abonner</button>
+                    </form>
+                    <p class="note" data-lang-fr="Restez à jour avec nos dernières offres et nouvelles !" data-lang-ar="ابق على اطلاع بأحدث العروض والأخبار لدينا" 
+                    lang="fr">Restez à jour avec nos dernières offres et nouvelles !</p>
                 </div>
             </div>
         </div>
