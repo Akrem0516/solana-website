@@ -30,6 +30,7 @@
     .airlines img{
         width: 40px;
         height: auto;
+        height: auto;
         display: inline-block;
         object-fit: contain;
         mix-blend-mode: color-burn;
