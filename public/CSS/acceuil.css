@@ -105,7 +105,9 @@
 
 
 
-
+    .header_pics{
+        display: none;
+    }
 
     .nos_realisations{
         display: flex;
