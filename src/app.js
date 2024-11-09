@@ -114,7 +114,6 @@ app.post('/support_client/send_email', (req, res) => {
 });
 
 
-
 app.use(express.static(path.join(__dirname , '../public/CSS')));
 app.use(express.static(path.join(__dirname , '../public/JS')));
 app.use(express.static(path.join(__dirname , '../public/PICs')));
