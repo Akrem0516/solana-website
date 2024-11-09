@@ -27,7 +27,8 @@
 
     <link rel="stylesheet" href="header.css"> <!-- header styling -->
     <link rel="stylesheet" href="acceuil.css"> <!-- main styling -->
-    <link rel="stylesheet" href="footer.css"> <!-- footer styling -->
+    <link rel="stylesheet" href="footer.css" media="print" onload="this.media='all'"> <!-- only load the stylesheet for print media, 
+    the media type to all after the CSS file has finished loading-->
 
 
 </head>
@@ -39,11 +40,9 @@
 <header>
     <div class="top">
         <div class="top_left">
-            <img id="logos_image" onclick="location.href = 'acceuil'" class="logo"  alt="Solana Travel Algeria LOGO" src="">
+            <img id="logos_image" onclick="location.href = 'acceuil'" class="logo"  alt="Solana Travel Algeria LOGO" src="SolanaLOGO.png">
             <div class="menu">
-                <a onclick="location.href = 'acceuil'" class="acceuil" data-lang-fr="Acceuil" data-lang-ar="الصفحة الرئيسية" lang="fr">
-                    Acceuil
-                </a>
+                <a onclick="location.href = 'acceuil'" class="acceuil" data-lang-fr="Acceuil" data-lang-ar="الصفحة الرئيسية" lang="fr">Acceuil</a>
                 <a onclick="location.href = 'nos_services'" class="nos_services" data-lang-fr="Nos Services" data-lang-ar="خدماتنا" lang="fr">Nos Services</a>
                 <a onclick="location.href = 'support_client'" class="support_client" data-lang-fr="Support Client" data-lang-ar="دعم العملاء" lang="fr">Support Client</a>
                 <a onclick="location.href = 'a_propos'" class="a_propos" data-lang-fr="À Propos" data-lang-ar="حولنا" lang="fr">À Propos</a>
@@ -112,7 +111,7 @@
                 Votre aventure commence avec Solana Travel !</h2>
             <div class="presentation_main_points">
                 <div class="main_point">
-                    <img src="Font Awesome/suitcase-rolling-solid.svg" loading="lazy" alt="Personalized trips">
+                    <img src="Font Awesome/suitcase-rolling-solid.svg"  alt="Personalized trips">
                     <h2 class="main_point_title" data-lang-fr="Voyages personnalisés" data-lang-ar="رحلات مخصصة" lang="fr">Voyages personnalisés</h2>
                     <p class="main_point_text" data-lang-fr="Solana Travel se spécialise dans la création d'expériences de voyage sur mesure pour divers besoins, 
                     y compris les vacances en famille, les voyages d'affaires et les pèlerinages spirituels." 
@@ -121,7 +120,7 @@
                     les voyages d'affaires et les pèlerinages spirituels.</p>
                 </div>
                 <div class="main_point">
-                    <img src="Font Awesome/bell-concierge-solid.svg" loading="lazy" alt="complete services">
+                    <img src="Font Awesome/bell-concierge-solid.svg"  alt="complete services">
                     <h2 class="main_point_title" data-lang-fr="Services complets" data-lang-ar="خدمات شاملة" lang="fr">Services complets</h2>
                     <p class="main_point_text" data-lang-fr="L'agence propose une gamme de services, y compris l'assurance voyage, les réservations de vols, 
                     les arrangements d'hébergement et le traitement des visas." 
