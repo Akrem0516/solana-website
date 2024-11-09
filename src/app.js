@@ -118,6 +118,7 @@ app.use(express.static(path.join(__dirname , '../public/CSS')));
 app.use(express.static(path.join(__dirname , '../public/JS')));
 app.use(express.static(path.join(__dirname , '../public/PICs')));
 
+
 //redirections
 app.get('/acceuil', (req, res) => {
     res.redirect('/');

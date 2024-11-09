@@ -1,3 +1,28 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('/Fonts/Source_Sans_3/static/SourceSans3-SemiBold.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/Fonts/Montserrat/static/Montserrat-SemiBold.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/Fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open_Sans';
+    src: url('/Fonts/Open_Sans/static/static/OpenSans-SemiBold.ttf') format('truetype');
+    font-display: swap;
+}
+
+
 html{
     scroll-behavior: smooth;
 }

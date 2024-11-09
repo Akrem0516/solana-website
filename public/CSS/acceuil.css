@@ -1,3 +1,29 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('/Fonts/Source_Sans_3/static/SourceSans3-SemiBold.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/Fonts/Montserrat/static/Montserrat-SemiBold.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/Fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open_Sans';
+    src: url('/Fonts/Open_Sans/static/static/OpenSans-SemiBold.ttf') format('truetype');
+    font-display: swap;
+}
+
+
+
 .airlines{
     display: flex;
 }
@@ -44,7 +70,7 @@
         flex-direction: column;
         gap: 20px;
     }
-    .presentation_title{
+    .presentation_title{    
         font-size: 14px;
         font-family: 'Montserrat';
         color: #602600;
@@ -166,7 +192,7 @@
     }
     
     .card_description {
-        font-family: 'Source Sans Pro', sans-serif;
+        font-family: 'Source Sans Pro';
         font-size: 9px;
     }
 
@@ -220,7 +246,7 @@
     .grid_tagline{
         grid-column: span 3; 
         text-align: center; 
-        font-family: 'Montserrat', sans-serif; 
+        font-family: 'Montserrat'; 
         font-size: 13px; 
         margin-top: 10px; 
         color: #7a7a7a; 
@@ -298,7 +324,7 @@
         color: #602600;
     }
     .main_point_text{
-        font-family: 'Source Sans pro', sans-serif;
+        font-family: 'Source Sans pro';
         font-size: 12px;
     }
 
@@ -392,7 +418,7 @@
     }
     
     .card_description {
-        font-family: 'Source Sans Pro', sans-serif;
+        font-family: 'Source Sans Pro';
         font-size: 10px;
     }
 
@@ -447,7 +473,7 @@
     .grid_tagline{
         grid-column: span 3; 
         text-align: center; 
-        font-family: 'Montserrat', sans-serif; 
+        font-family: 'Montserrat'; 
         font-size: 14px; 
         margin-top: 10px; 
         color: #7a7a7a; 
@@ -521,7 +547,7 @@
         color: #602600;
     }
     .main_point_text{
-        font-family: 'Source Sans pro', sans-serif;
+        font-family: 'Source Sans pro';
         font-size: 14px;
     }
 
@@ -611,7 +637,7 @@
     }
     
     .card_description {
-        font-family: 'Source Sans Pro', sans-serif;
+        font-family: 'Source Sans Pro';
         font-size: 14px;
     }
 
@@ -668,7 +694,7 @@
     .grid_tagline{
         grid-column: span 3; 
         text-align: center; 
-        font-family: 'Montserrat', sans-serif; 
+        font-family: 'Montserrat'; 
         font-size: 22px; 
         margin-top: 20px; 
         color: #7a7a7a; 
@@ -747,7 +773,7 @@ main{
     color: #602600;
 }
 .main_point_text{
-    font-family: 'Source Sans pro', sans-serif;
+    font-family: 'Source Sans pro';
     font-size: 16px;
 }
 .nos_realisations{
@@ -834,7 +860,7 @@ main{
 }
 
 .card_description {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro';
     font-size: 16px;
 }
 .reviews{
@@ -885,7 +911,7 @@ main{
 .grid_tagline{
     grid-column: span 3; 
     text-align: center; 
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat'; 
     font-size: 30px; 
     margin-top: 40px; 
     color: #7a7a7a; 

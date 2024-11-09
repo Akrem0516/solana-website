@@ -1,3 +1,28 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('/Fonts/Source_Sans_3/static/SourceSans3-SemiBold.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/Fonts/Montserrat/static/Montserrat-SemiBold.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/Fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open_Sans';
+    src: url('/Fonts/Open_Sans/static/static/OpenSans-SemiBold.ttf') format('truetype');
+    font-display: swap;
+}
+
+
 body{
     margin: 0;
     transition: background-color 0.4s;
@@ -149,7 +174,7 @@ html{
     }
     .main_text p{
         font-size: 10px; 
-        font-family: 'Source Sans pro', sans-serif;
+        font-family: 'Source Sans pro';
         color: #ca5100;
     }
     .main_text h1{
@@ -166,7 +191,7 @@ html{
         cursor: pointer;
         transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
         box-shadow: 4px 4px 90px rgba(0, 0, 0, 0.2);
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Poppins';
         font-weight: 600;
         font-size: 10px;
     }
