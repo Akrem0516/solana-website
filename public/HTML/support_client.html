@@ -25,7 +25,7 @@
 
 
     <!-- css files -->
- 
+
     <link rel="stylesheet" href="header.css"> <!-- header styling -->
     <link rel="stylesheet" href="support_client.css">
     <link rel="stylesheet" href="footer.css" media="print" onload="this.media='all'"> <!-- only load the stylesheet for print media, 
@@ -35,54 +35,66 @@
 </head>
 
 
-<div id="content" >
+<div id="content">
     <!-- header begins-->
-<header>
-    <div class="top">
-        <div class="top_left">
-            <img id="logos_image" onclick="location.href = 'acceuil'" class="logo"  alt="Solana Travel Algeria LOGO" src="">
-            <div class="menu">
-                <a onclick="location.href = 'acceuil'" class="acceuil" data-lang-fr="Acceuil" data-lang-ar="الصفحة الرئيسية" lang="fr">
-                    Acceuil
-                </a>
-                <a onclick="location.href = 'nos_services'" class="nos_services" data-lang-fr="Nos Services" data-lang-ar="خدماتنا" lang="fr">Nos Services</a>
-                <a onclick="location.href = 'support_client'" class="support_client" data-lang-fr="Support Client" data-lang-ar="دعم العملاء" lang="fr">Support Client</a>
-                <a onclick="location.href = 'a_propos'" class="a_propos" data-lang-fr="À Propos" data-lang-ar="حولنا" lang="fr">À Propos</a>
+    <header>
+        <div class="top">
+            <div class="top_left">
+                <img id="logos_image" onclick="location.href = 'acceuil'" class="logo" alt="Solana Travel Algeria LOGO"
+                    src="SolanaLOGO.png">
+                <div class="menu hide">
+                    <a onclick="location.href = 'acceuil'" class="acceuil" data-lang-fr="Acceuil"
+                        data-lang-ar="الصفحة الرئيسية" lang="fr">Acceuil</a>
+                    <a onclick="location.href = 'nos_services'" class="nos_services" data-lang-fr="Nos Services"
+                        data-lang-ar="خدماتنا" lang="fr">Nos Services</a>
+                    <a onclick="location.href = 'support_client'" class="support_client" data-lang-fr="Support Client"
+                        data-lang-ar="دعم العملاء" lang="fr">Support Client</a>
+                    <a onclick="location.href = 'a_propos'" class="a_propos" data-lang-fr="À Propos"
+                        data-lang-ar="حولنا" lang="fr">À Propos</a>
+                </div>
             </div>
-        </div>
-        <div class="top_right">
-            <div class="header_contact">
-                <img src="Font Awesome/instagram-brands-solid.svg" loading="lazy" onclick="window.open('https://www.instagram.com/solana_travel_dz/', '_blank');" alt="instagram logo">
-                <img src="Font Awesome/facebook-brands-solid.svg" loading="lazy" onclick="window.open('https://www.facebook.com/solana.traavel', '_blank');" alt="facebook logo">
-                <img src="Font Awesome/tiktok-brands-solid.svg" loading="lazy" onclick="window.open('https://www.tiktok.com/@solana_travel2', '_blank');" alt="tiktok logo">
-                <img src="Font Awesome/whatsapp-brands-solid.svg" loading="lazy" onclick="window.open('https://wa.me/+213556534705', '_blank');" alt="whatsapp logo">
-            </div>
+            <div class="top_right">
+                <div class="header_contact">
+                    <img src="Font Awesome/instagram-brands-solid.svg" loading="lazy"
+                        onclick="window.open('https://www.instagram.com/solana_travel_dz/', '_blank');"
+                        alt="instagram logo">
+                    <img src="Font Awesome/facebook-brands-solid.svg" loading="lazy"
+                        onclick="window.open('https://www.facebook.com/solana.traavel', '_blank');" alt="facebook logo">
+                    <img src="Font Awesome/tiktok-brands-solid.svg" loading="lazy"
+                        onclick="window.open('https://www.tiktok.com/@solana_travel2', '_blank');" alt="tiktok logo">
+                    <img src="Font Awesome/whatsapp-brands-solid.svg" loading="lazy"
+                        onclick="window.open('https://wa.me/+213556534705', '_blank');" alt="whatsapp logo">
+                </div>
 
-            <div class="language">
-                <p class="languagebtn" data-lang-fr="FR" data-lang-ar="ع" lang="fr">ع</p>
+                <div class="language">
+                    <p class="languagebtn" data-lang-fr="FR" data-lang-ar="ع" lang="fr">ع</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="hero_section">
-        <div class="main_text">
-            <p data-lang-fr="Découvrez le monde, avec nos services de voyage." data-lang-ar="اكتشف العالم مع خدمات السفر لدينا." lang="fr">
-                Découvrez le monde, avec nos services de voyage.
-            </p>
-            <div>
-                <h1 data-lang-fr="Bienvenue chez Solana," data-lang-ar="مرحبًا بكم في سولانا" lang="fr"> Bienvenue chez Solana,</h1>
-                <h1 data-lang-fr="un monde d'aventures !" data-lang-ar="عالم من المغامرات" lang="fr"> un monde d'aventures !</h1>
+        <div class="hero_section">
+            <div class="main_text">
+                <p data-lang-fr="Découvrez le monde, avec nos services de voyage."
+                    data-lang-ar="اكتشف العالم مع خدمات السفر لدينا." lang="fr">
+                    Découvrez le monde, avec nos services de voyage.
+                </p>
+                <div>
+                    <h1 data-lang-fr="Bienvenue chez Solana," data-lang-ar="مرحبًا بكم في سولانا" lang="fr"> Bienvenue
+                        chez Solana,</h1>
+                    <h1 data-lang-fr="un monde d'aventures !" data-lang-ar="عالم من المغامرات" lang="fr"> un monde
+                        d'aventures !</h1>
+                </div>
+                <button onclick="location.href='/support_client'" data-lang-fr="Découvrir" data-lang-ar="اكتشف"
+                    lang="fr">Découvrir</button>
             </div>
-            <button onclick="location.href='/support_client'" data-lang-fr="Découvrir" data-lang-ar="اكتشف" lang="fr">Découvrir</button>
+            <div class="header_pics">
+                <img src="/Places/hotel_egypt.jpg" alt="Egypt Hotel by solana travel Algeria">
+                <img src="/Places/china.jpg" alt="China by solana travel Algeria">
+                <img src="/Places/champs-elysees.jpg" class="Champs Elysees by solana travel Algeria" alt="">
+                <img src="/Places/moscow.jpg" alt="Moscow by solana travel Algeria">
+            </div>
         </div>
-        <div class="header_pics">
-            <img src="/Places/hotel_egypt.jpg" loading="lazy" alt="Egypt Hotel by solana travel Algeria">
-            <img src="/Places/china.jpg" loading="lazy" alt="China by solana travel Algeria">
-            <img src="/Places/champs-elysees.jpg" loading="lazy"  alt="Champs Elysees by solana travel Algeria">
-            <img src="/Places/moscow.jpg" loading="lazy" alt="Moscow by solana travel Algeria">
-        </div>
-    </div>
-</header>
-<!-- header ends-->
+    </header>
+    <!-- header ends-->
 
 
 
@@ -101,7 +113,7 @@
                         data-lang-ar="رابطك المباشر للحصول على إجابات سريعة وفعالة">Votre lien direct pour des réponses
                         rapides et efficaces</h3>
                 </div>
-                <img src="Services/contact_us.jpg"  alt="Contact SOLANA Travel">
+                <img src="Services/contact_us.jpg" alt="Contact SOLANA Travel">
                 <div class="contact_us_text">
                     <p data-lang-fr="Bienvenue dans notre centre de support dédié, conçu pour vous fournir l'assistance dont vous avez besoin ! Chez SOLANA TRAVEL, la satisfaction de la clientèle est notre priorité absolue. Que vous ayez des questions sur nos produits, besoin d'aide pour naviguer dans nos services, ou nécessitiez des conseils de dépannage, notre équipe compétente est prête à vous aider. Nous comprenons l'importance d'un support rapide et fiable, et nous nous engageons à garantir que votre expérience avec nous soit fluide. N'hésitez pas à explorer nos ressources ou à nous contacter directement pour une assistance personnalisée. Votre satisfaction est primordiale, et nous sommes là à chaque étape pour répondre à vos questions ou préoccupations. Merci d'avoir choisi SOLANA TRAVEL, travaillons ensemble pour rendre votre expérience exceptionnelle avec nous."
                         data-lang-ar="مرحبًا بكم في مركز الدعم المخصص لدينا، المصمم لتزويدكم بالمساعدة التي تحتاجونها! في SOLANA TRAVEL، رضا العملاء هو أولويتنا القصوى. سواء كانت لديك أسئلة حول منتجاتنا، أو تحتاج إلى مساعدة في التنقل في خدماتنا، أو تحتاج إلى نصائح للحل، فإن فريقنا المتمكن جاهز لمساعدتك. نحن نفهم أهمية الدعم السريع والموثوق، ونعمل على ضمان أن تجربتك معنا ستكون سلسة. لا تتردد في استكشاف مواردنا أو الاتصال بنا مباشرة للحصول على المساعدة الشخصية. رضاك مهم للغاية، ونحن هنا في كل خطوة للإجابة على أسئلتك أو مخاوفك. شكرًا لاختيارك SOLANA TRAVEL، دعونا نعمل معًا لجعل تجربتك استثنائية معنا.">
@@ -165,8 +177,9 @@
                             <label for="email" data-lang-fr="Email" data-lang-ar="البريد الإلكتروني">Email</label>
                             <div class="txt">
                                 <img src="Font Awesome/envelope-solid.svg" alt="envelope">
-                                <input type="email" id="email" name="email" placeholder="Saisir votre Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
-                                title="S'il vous plaît, mettez une adresse email valide.">
+                                <input type="email" id="email" name="email" placeholder="Saisir votre Email" required
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                    title="S'il vous plaît, mettez une adresse email valide.">
                             </div>
                         </div>
 
@@ -209,8 +222,7 @@
                         .5416179602407!2d3.246107211224532!3d36.78156247213667!2m3!1f0!2f0!3f0!
                         3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128e4f5be5f3db89%3A0xfb5e8e81e484b7a3!
                         2sSOLANA%20TRAVEL!5e0!3m2!1sfr!2sdz!4v1701342016206!5m2!1sfr!2sdz" width="100%" height="390"
-                            style="border:0;" allowfullscreen="" 
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <h3 class="send_email_tagline"
                         data-lang-fr="Écrivez-nous et embarquez pour votre prochaine aventure"
@@ -235,8 +247,7 @@
                         <img src="Font Awesome/caret-down-solid.svg" class="fa-caret-down" alt="envelope">
                     </div>
                     <div class="answer hide" style="height: 0px;">
-                        <p
-                            data-lang-fr="Nous acceptons divers modes de paiement, y compris virement Baridimob, les virements bancaires Euro, et les paiements en espèces. Pour plus de détails, veuillez nous contacter."
+                        <p data-lang-fr="Nous acceptons divers modes de paiement, y compris virement Baridimob, les virements bancaires Euro, et les paiements en espèces. Pour plus de détails, veuillez nous contacter."
                             data-lang-ar="نقبل عدة طرق للدفع، بما في ذلك التحويل Baridimob، والتحويلات البنكية باليورو، والمدفوعات نقدًا. لمزيد من التفاصيل، يرجى الاتصال بنا.">
                             Nous acceptons divers modes de paiement, y compris virement Baridimob, les virements
                             bancaires Euro, et les paiements en espèces. Pour plus de détails, veuillez nous contacter.
@@ -248,11 +259,10 @@
                     <div class="question">
                         <h3 class="question_title" data-lang-fr="Proposez-vous une assurance voyage ?"
                             data-lang-ar="هل تقدمون تأمين السفر؟">Proposez-vous une assurance voyage ?</h3>
-                            <img src="Font Awesome/caret-down-solid.svg" class="fa-caret-down" alt="envelope">
+                        <img src="Font Awesome/caret-down-solid.svg" class="fa-caret-down" alt="envelope">
                     </div>
                     <div class="answer hide" style="height: 0px;">
-                        <p
-                            data-lang-fr="Oui, nous offrons des options d'assurance voyage en collaboration avec Macir Vie pour vous protéger en cas d'imprévus durant votre voyage."
+                        <p data-lang-fr="Oui, nous offrons des options d'assurance voyage en collaboration avec Macir Vie pour vous protéger en cas d'imprévus durant votre voyage."
                             data-lang-ar="نعم، نقدم خيارات تأمين السفر بالتعاون مع Macir Vie لحمايتك في حالة الطوارئ أثناء رحلتك.">
                             Oui, nous offrons des options d'assurance voyage en collaboration avec Macir Vie pour vous
                             protéger en cas d'imprévus durant votre voyage.
@@ -266,7 +276,7 @@
                             data-lang-fr="Quels documents sont nécessaires pour demander un visa touristique pour l'état Schengen ?"
                             data-lang-ar="ما هي الوثائق المطلوبة للتقدم بطلب للحصول على تأشيرة سياحية لدولة شنجن؟">Quels
                             documents sont nécessaires pour demander un visa touristique pour l'état Schengen ?</h3>
-                            <img src="Font Awesome/caret-down-solid.svg" class="fa-caret-down" alt="envelope">
+                        <img src="Font Awesome/caret-down-solid.svg" class="fa-caret-down" alt="envelope">
                     </div>
                     <ul class="answer hide" style="height: 0px;">
                         <li data-lang-fr="Attestation de Travail ou Registre de commerce"
@@ -305,56 +315,72 @@
 
 
     <!-- footer begins -->
-<footer>
-    <div class="bottom">
-        <div class="top_bottom">
-            <div class="experts_numbers">
-                <h3 class="experts_numbers_text" data-lang-fr="parlez à nos experts à :" data-lang-ar="تحدث إلى خبرائنا في :" lang="fr">
-                    parlez à nos experts à :
+    <footer>
+        <div class="bottom">
+            <div class="top_bottom">
+                <div class="experts_numbers">
+                    <h3 class="experts_numbers_text" data-lang-fr="parlez à nos experts à :"
+                        data-lang-ar="تحدث إلى خبرائنا في :" lang="fr">
+                        parlez à nos experts à :
+                    </h3>
+                    <div class="phone_numbers">
+                        <p data-lang-fr="+213 556 53 47 05" data-lang-ar="05 47 53 556 213+">+213 556 53 47 05</p>
+                        <p data-lang-fr="+213 556 53 47 05" data-lang-ar="57 21 79 777 213+">+213 777 79 21 57</p>
+                    </div>
+                </div>
+                <h3 class="follow_us" onclick="window.open('https://bit.ly/m/solana_travel', '_blank');"
+                    data-lang-fr="Suivez-nous" data-lang-ar="تابعنا" lang="fr">
+                    Suivez-nous
                 </h3>
-                <div class="phone_numbers">
-                    <p data-lang-fr="+213 556 53 47 05" data-lang-ar="05 47 53 556 213+">+213 556 53 47 05</p>
-                    <p data-lang-fr="+213 556 53 47 05" data-lang-ar="57 21 79 777 213+">+213 777 79 21 57</p>
+            </div>
+            <span></span>
+            <div class="bottom_bottom">
+                <div class="contact">
+                    <h3 class="contact_text" data-lang-fr="Contact" data-lang-ar="اتصل" lang="fr">Contact</h3>
+                    <div class="contact_details">
+                        <p data-lang-fr="Coop EL BADR Nº75 Bordj El Bahri, Alger, Algérie"
+                            data-lang-ar=" برج البحري الجزائر" lang="fr">Coop EL BADR Nº75 Bordj El Bahri, Alger,
+                            Algérie</p>
+                        <p data-lang-fr="solanatraveldz@gmail.com" data-lang-ar="solanatraveldz@gmail.com" lang="fr">
+                            solanatraveldz@gmail.com</p>
+                    </div>
+                </div>
+                <div class="entreprise">
+                    <h3 class="entreprise_text" data-lang-fr="Entreprise" data-lang-ar="شركة" lang="fr">Entreprise</h3>
+                    <div class="entreprise_details">
+                        <p onclick="location.href='/a_propos'" data-lang-fr="À Propos de nous"
+                            data-lang-ar="معلومات عنا" lang="fr">À Propos de nous</p>
+                        <p onclick="location.href='#reviews'" data-lang-fr="Avis sur SOLANA TRAVEL"
+                            data-lang-ar="آراء حول سولانا ترافل" lang="fr">Avis sur SOLANA TRAVEL</p>
+                        <p onclick="location.href='/support_client/#map'" data-lang-fr="Localisation"
+                            data-lang-ar="موقع" lang="fr">Localisation</p>
+                        <p onclick="window.open('https://wa.me/+213556534705', '_blank');" data-lang-fr="Contactez-nous"
+                            data-lang-ar="اتصل بنا" lang="fr">Contactez-nous</p>
+                    </div>
+                </div>
+                <div class="subscription_session">
+                    <div class="subscription-form">
+                        <h2 data-lang-fr="Abonnez-vous à notre newsletter"
+                            data-lang-ar="اشترك في النشرة الإخبارية لدينا" lang="fr">Abonnez-vous à notre newsletter
+                        </h2>
+                        <form id="subscribe-form">
+                            <input type="email" name="email" id="email" placeholder="Votre email" required
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                title="S'il vous plaît, mettez une adresse email valide.">
+                            <button type="submit" data-lang-fr="S'abonner" data-lang-ar="اشترك"
+                                lang="fr">S'abonner</button>
+                        </form>
+                        <p class="note" data-lang-fr="Restez à jour avec nos dernières offres et nouvelles !"
+                            data-lang-ar="ابق على اطلاع بأحدث العروض والأخبار لدينا" lang="fr">Restez à jour avec nos
+                            dernières offres et nouvelles !</p>
+                    </div>
                 </div>
             </div>
-            <h3 class="follow_us" onclick="window.open('https://bit.ly/m/solana_travel', '_blank');" data-lang-fr="Suivez-nous" data-lang-ar="تابعنا" lang="fr">
-                Suivez-nous
-            </h3>
+            <p class="copyrhight" data-lang-fr="Droits d'auteur © Mezouri 2024"
+                data-lang-ar="حقوق الطبع والنشر © مزوري 2024">Copyright © Mezouri 2024</p>
         </div>
-        <span></span>
-        <div class="bottom_bottom">
-            <div class="contact">
-                <h3 class="contact_text" data-lang-fr="Contact" data-lang-ar="اتصل" lang="fr">Contact</h3>
-                <div class="contact_details">
-                    <p data-lang-fr="Coop EL BADR Nº75 Bordj El Bahri, Alger, Algérie" data-lang-ar=" برج البحري الجزائر" lang="fr">Coop EL BADR Nº75 Bordj El Bahri, Alger, Algérie</p>
-                    <p data-lang-fr="solanatraveldz@gmail.com" data-lang-ar="solanatraveldz@gmail.com" lang="fr">solanatraveldz@gmail.com</p>
-                </div>
-            </div>
-            <div class="entreprise">
-                <h3 class="entreprise_text" data-lang-fr="Entreprise" data-lang-ar="شركة" lang="fr">Entreprise</h3>
-                <div class="entreprise_details">
-                    <p onclick="location.href='/a_propos'" data-lang-fr="À Propos de nous" data-lang-ar="معلومات عنا" lang="fr">À Propos de nous</p>
-                    <p onclick="location.href='#reviews'" data-lang-fr="Avis sur SOLANA TRAVEL" data-lang-ar="آراء حول سولانا ترافل" lang="fr">Avis sur SOLANA TRAVEL</p>
-                    <p onclick="location.href='/support_client/#map'" data-lang-fr="Localisation" data-lang-ar="موقع" lang="fr">Localisation</p>
-                    <p onclick="window.open('https://wa.me/+213556534705', '_blank');" data-lang-fr="Contactez-nous" data-lang-ar="اتصل بنا" lang="fr">Contactez-nous</p>
-                </div>
-            </div>
-            <div class="subscription_session">
-                <div class="subscription-form">
-                    <h2 data-lang-fr="Abonnez-vous à notre newsletter" data-lang-ar="اشترك في النشرة الإخبارية لدينا" lang="fr">Abonnez-vous à notre newsletter</h2>
-                    <form id="subscribe-form">
-                        <input type="email" name="email" id="email" placeholder="Votre email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="S'il vous plaît, mettez une adresse email valide.">
-                        <button type="submit" data-lang-fr="S'abonner" data-lang-ar="اشترك" lang="fr">S'abonner</button>
-                    </form>
-                    <p class="note" data-lang-fr="Restez à jour avec nos dernières offres et nouvelles !" data-lang-ar="ابق على اطلاع بأحدث العروض والأخبار لدينا" 
-                    lang="fr">Restez à jour avec nos dernières offres et nouvelles !</p>
-                </div>
-            </div>
-        </div>
-        <p class="copyrhight" data-lang-fr="Droits d'auteur © Mezouri 2024" data-lang-ar="حقوق الطبع والنشر © مزوري 2024">Copyright © Mezouri 2024</p>
-    </div>
-</footer>
-<!-- footer ends -->
+    </footer>
+    <!-- footer ends -->
 
 </div>
 

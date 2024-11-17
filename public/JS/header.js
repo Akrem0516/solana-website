@@ -30,8 +30,8 @@ function manageHamburger() {
         }
 
         hamburger.appendChild(btn);
-        
-       
+
+
         hamburger.appendChild(menu);
         top_left.appendChild(hamburger);
 
