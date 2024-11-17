@@ -30,8 +30,8 @@ function manageHamburger() {
         }
 
         hamburger.appendChild(btn);
-        menu.classList.add("hide");
-        header_contact.classList.add("hide");
+        
+       
         hamburger.appendChild(menu);
         top_left.appendChild(hamburger);
 
@@ -79,10 +79,14 @@ function changeLogo() {
     const logos_image = document.getElementById("logos_image");
     if (window.matchMedia("(max-width: 800px)").matches) {
         logos_image.setAttribute('src', 'SolanaLOGO.png');
+        menu.classList.add("hide");
+        header_contact.classList.add("hide");
         header_pics.classList.add("hide");
     } else {
         logos_image.setAttribute('src', 'solana_website_logo.png');
         header_pics.classList.remove("hide");
+        header_contact.classList.remove("hide");
+        menu.classList.remove("hide");
         body.style.backgroundColor = "";
         topheader.style.background = "";
     }
