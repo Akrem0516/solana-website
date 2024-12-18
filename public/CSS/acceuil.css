@@ -194,7 +194,8 @@
     }
     
     .card_description {
-        font-family: 'Source Sans Pro';
+        padding: 3px 0;
+        color: #602600;
         font-size: 9px;
     }
 
@@ -230,13 +231,19 @@
         background-color: white;
         align-items: center;
         text-align: center;
-    }
-    .reviews_grid img{
-        box-shadow: 5px 0px 9px #f0f0f0;
         width: 160px;
-        height: auto;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+    }
+    .reviews_grid p{
+        padding: 10px;
+        color: #602600;
+        font-size: 9px;
+    }
+    .reviews_grid div{
+        display: block; 
+        width: 50%;
+        height: 1px;
+        background-color: black;
+        margin: 3px 0;
     }
     .reviews_grid a{
         padding: 10px;
@@ -420,7 +427,8 @@
     }
     
     .card_description {
-        font-family: 'Source Sans Pro';
+        padding: 5px 0;
+        color: #602600;
         font-size: 10px;
     }
 
@@ -457,13 +465,24 @@
         background-color: white;
         align-items: center;
         text-align: center;
+        width: 200px;
     }
-    .reviews_grid img{
-        box-shadow: 5px 0px 9px #f0f0f0;
-        width: 190px;
-        height: auto;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+    .reviews_grid p{
+        padding: 30px;
+        color: #602600;
+        font-size: 16px;
+    }
+    .reviews_grid p{
+        padding: 15px;
+        color: #602600;
+        font-size: 10px;
+    }
+    .reviews_grid div{
+        display: block; 
+        width: 50%;
+        height: 1px;
+        background-color: black;
+        margin: 5px 0;
     }
     .reviews_grid a{
         padding: 12px;
@@ -639,7 +658,8 @@
     }
     
     .card_description {
-        font-family: 'Source Sans Pro';
+        padding: 8px 0;
+        color: #602600;
         font-size: 14px;
     }
 
@@ -679,12 +699,17 @@
         align-items: center;
         text-align: center;
     }
-    .reviews_grid img{
-        box-shadow: 5px 0px 9px #f0f0f0;
-        width: 210px;
-        height: auto;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
+    .reviews_grid p{
+        padding: 20px;
+        color: #602600;
+        font-size: 14px;
+    }
+    .reviews_grid div{
+        display: block; 
+        width: 50%;
+        height: 1px;
+        background-color: black;
+        margin: 8px 0;
     }
     .reviews_grid a{
         padding: 15px;
@@ -862,7 +887,8 @@ main{
 }
 
 .card_description {
-    font-family: 'Source Sans Pro';
+    padding: 10px 0;
+    color: #602600;
     font-size: 16px;
 }
 .reviews{
@@ -897,12 +923,17 @@ main{
     align-items: center;
     text-align: center;
 }
-.reviews_grid img{
-    box-shadow: 5px 0px 9px #f0f0f0;
-    width: 300px;
-    height: auto;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+.reviews_grid p{
+    padding: 30px;
+    color: #602600;
+    font-size: 16px;
+}
+.reviews_grid div{
+    display: block; 
+    width: 50%;
+    height: 1px;
+    background-color: black;
+    margin: 10px 0;
 }
 .reviews_grid a{
     padding: 20px;
