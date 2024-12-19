@@ -32,8 +32,9 @@ To run this project locally, follow these steps:
    npm init -y
    npm install
 4. Start the server
-   npm run dev or npm start
-5. Open your web browser and visit:
+   npm run dev ( Starts with nodemon app)
+   npm start  ( Starts with node app )
+6. Open your web browser and visit:
    http://localhost:8000
 
 For questions or further information, feel free to reach out at:
