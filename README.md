@@ -29,9 +29,11 @@ To run this project locally, follow these steps:
 2. Navigate to the project folder:
    cd solana-website
 3. Install project dependencies using npm:
-   npm init -y
+   npm install -g yarn
    npm install
-4. Start the server
+   3. Install project dependencies using yarn:
+   yarn install
+5. Start the server
    npm run dev ( Starts with nodemon app)
    npm start  ( Starts with node app )
 6. Open your web browser and visit:
