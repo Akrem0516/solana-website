@@ -141,9 +141,3 @@ app.get('/a_propos', (req , res) => {
 app.use((req,res) => {
     res.status(404).sendFile('./public/HTML/404.html',{root : path.resolve(__dirname, '..')});
 });
-
-
-
-
-
-

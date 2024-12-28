@@ -27,8 +27,3 @@
         // Update language button text
         languageButton.textContent = currentLang === 'fr' ? 'ع' : 'FR';
     });
-
-
-   
-
-    
